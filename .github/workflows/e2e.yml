@@ -1,0 +1,65 @@
+name: E2E Tests
+
+on:
+  push:
+    branches:
+      - main
+      - 'feat/**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  playwright:
+    name: Playwright Smoke Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      # Variables mínimas para que el dev server arranque (placeholder · NO secretos reales).
+      # En CI real con BD test, sustituir por secrets.NEXT_PUBLIC_SUPABASE_URL etc.
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL_TEST || 'http://localhost:54321' }}
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY_TEST || 'test-anon-key' }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY_TEST || 'test-service-key' }}
+      INTERNAL_API_SECRET: ${{ secrets.INTERNAL_API_SECRET_TEST || 'test-internal-secret-32-chars-long' }}
+      NODE_ENV: test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Build Next.js (smoke check)
+        run: npm run build
+        continue-on-error: false
+
+      - name: Run Playwright E2E tests
+        run: npx playwright test
+        continue-on-error: false
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+      - name: Upload trace artifacts (failures)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: test-results/
+          retention-days: 7

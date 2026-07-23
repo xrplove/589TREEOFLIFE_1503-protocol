@@ -1,0 +1,128 @@
+[
+  {
+    "id": "automocion",
+    "file": "sector-automocion.jpg",
+    "kb": 658,
+    "title": "File:Alpine Renault (8413756575).jpg",
+    "license": "CC BY 2.0",
+    "artist": "Pedro Ribeiro Simões from Lisboa, Portugal",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=42013817"
+  },
+  {
+    "id": "salud",
+    "file": "sector-salud.jpg",
+    "kb": 448,
+    "title": "File:Lutycka Hospital Poznan modern architecture.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "MOs810",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=25256118"
+  },
+  {
+    "id": "agroalimentario",
+    "file": "sector-agroalimentario.jpg",
+    "kb": 826,
+    "title": "File:Grey post harvest farmland - geograph.org.uk - 4294776.jpg",
+    "license": "CC BY-SA 2.0",
+    "artist": "Fernweh",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=127896202"
+  },
+  {
+    "id": "transporte",
+    "file": "sector-transporte.jpg",
+    "kb": 730,
+    "title": "File:Aerial photograph of the Port of Miami Container Port.jpg",
+    "license": "Public domain",
+    "artist": "James R. Tourtellotte",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=6012503"
+  },
+  {
+    "id": "metalurgico",
+    "file": "sector-metalurgico.jpg",
+    "kb": 839,
+    "title": "File:Iron industry in cleveland.jpg",
+    "license": "Public domain",
+    "artist": "\"Cleveland as a Hardware and Iron Center\". The Iron Age. October 17, 1901, p. 52g.",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=61376093"
+  },
+  {
+    "id": "energia",
+    "file": "sector-energia.jpg",
+    "kb": 704,
+    "title": "File:Solar Sharing Power Plant in Inashiki, Ibaraki 01.jpg",
+    "license": "CC BY 4.0",
+    "artist": "Σ64",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=85459410"
+  },
+  {
+    "id": "tecnologia",
+    "file": "sector-tecnologia.jpg",
+    "kb": 398,
+    "title": "File:BalticServers data center.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "BalticServers.com",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=26575836"
+  },
+  {
+    "id": "turismo",
+    "file": "sector-turismo.jpg",
+    "kb": 459,
+    "title": "File:FEMA - 13252 - Photograph by Leif Skoogfors taken on 06-20-2005 in Florida.jpg",
+    "license": "Public domain",
+    "artist": "Leif Skoogfors",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=8082906"
+  },
+  {
+    "id": "legal",
+    "file": "sector-legal.jpg",
+    "kb": 763,
+    "title": "File:Harris County 1910 Courthouse.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "i_am_jim",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=22652552"
+  },
+  {
+    "id": "cultura",
+    "file": "sector-cultura.jpg",
+    "kb": 381,
+    "title": "File:Imperial Palace Hall Reconstruction, Gallery of Chinese Architecture, Royal Ontario Museum, painted beam detail interior.jpg",
+    "license": "CC BY-SA 3.0",
+    "artist": "KristyVan",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=28058117"
+  },
+  {
+    "id": "institucional",
+    "file": "sector-institucional.jpg",
+    "kb": 625,
+    "title": "File:Mongolian Parliament 1.JPG",
+    "license": "Public domain",
+    "artist": "Brücke-Osteuropa",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=9758206"
+  },
+  {
+    "id": "educacion",
+    "file": "sector-educacion.jpg",
+    "kb": 659,
+    "title": "File:Library in Xi'an University of Architecture and Technology Yanta Campus 2011-07.JPG",
+    "license": "CC BY-SA 3.0",
+    "artist": "猫猫的日记本",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=27949056"
+  },
+  {
+    "id": "medioambiente",
+    "file": "sector-medioambiente.jpg",
+    "kb": 168,
+    "title": "File:Landscape of green fields.jpg",
+    "license": "Public domain",
+    "artist": "Unknown authorUnknown author",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=24905257"
+  },
+  {
+    "id": "financiero",
+    "file": "sector-financiero.jpg",
+    "kb": 369,
+    "title": "File:2businessbay.jpg",
+    "license": "Public domain",
+    "artist": "Rahmalec at English Wikipedia",
+    "descurl": "https://commons.wikimedia.org/w/index.php?curid=2711158"
+  }
+]

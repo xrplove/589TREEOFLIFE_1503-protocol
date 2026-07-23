@@ -1,0 +1,65 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "individual",
+    "role": "owner",
+    "name": "José Antonio Soler Madrid",
+    "email": "j.soler@1503.global",
+    "description": "Solo founder and developer of the 1503 Protocol, an open-source trust layer for cross-border B2B commerce built on the XRP Ledger. Independent maintainer (individual / self-employed, no company), based in Spain (EU). The protocol layer is released under the MIT license so it can be reused as shared public infrastructure rather than a proprietary silo.",
+    "webpageUrl": {
+      "url": "https://github.com/instalacionesdelamadera-cmd/1503-protocol"
+    }
+  },
+  "projects": [
+    {
+      "guid": "1503-protocol",
+      "name": "1503 Protocol",
+      "description": "Open-source trust layer for cross-border B2B trade on the XRP Ledger. Provides non-custodial escrow, ed25519 multi-signature custody (3/3 oracle release), and on-ledger anchoring of a Digital Product Passport, so buyer and seller in different jurisdictions can transact with verifiable, auditable settlement instead of blind trust. Runs verify-on-ledger on XRPL testnet with a full end-to-end flow (onboarding, order, escrow lock, oracle release). Privacy by design: only SHA-256 hashes of canonical payloads are anchored on-chain, never personal data. MIT licensed; the goal is a reusable public-good protocol, not a proprietary platform.",
+      "webpageUrl": {
+        "url": "https://github.com/instalacionesdelamadera-cmd/1503-protocol"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/instalacionesdelamadera-cmd/1503-protocol"
+      },
+      "licenses": [
+        "spdx:MIT"
+      ],
+      "tags": [
+        "finance",
+        "payments",
+        "e-commerce",
+        "cryptography",
+        "security",
+        "privacy",
+        "api",
+        "xrpl",
+        "trade-finance",
+        "blockchain"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "bank-eur",
+        "type": "bank",
+        "description": "EUR / SEPA bank transfer. Account details are shared privately on award and deliberately kept off this public manifest for privacy."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "protocol-2026",
+        "status": "active",
+        "name": "2026 protocol maintenance, security review and documentation",
+        "description": "One-time grant to sustain the open-source XRPL trust-layer protocol: hardening and independent security review of the escrow/custody core, maintaining the test suite, and improving developer documentation so other builders can reuse it. Any amount helps; the figure below is an open target, not a fixed requirement.",
+        "amount": 25000,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": [
+          "bank-eur"
+        ]
+      }
+    ]
+  }
+}

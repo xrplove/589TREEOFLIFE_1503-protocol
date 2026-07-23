@@ -1,0 +1,476 @@
+{
+  "generated": "demo · prueba seria · sin BD · sin dinero real",
+  "ingesta": {
+    "ingestadas": 100,
+    "ready2028": 39
+  },
+  "pedido": {
+    "reference": "ORD-PRUEBA-001",
+    "exporter": {
+      "name": "Artihome SL (Artikalia · demo)",
+      "country": "ES",
+      "role": "exporter",
+      "tax_ref": "ESB-DEMO"
+    },
+    "importer": {
+      "name": "Importadora Andina SAS (demo)",
+      "country": "CO",
+      "role": "importer"
+    },
+    "origin_country": "ES",
+    "destination_country": "CO",
+    "incoterm": "CIF",
+    "currency": "EUR",
+    "lines": [
+      {
+        "sku": "ART-ASI-1003",
+        "description": "Sillón MDF chapado natural aceitado",
+        "quantity": 10,
+        "unit_price": 142.1,
+        "currency": "EUR",
+        "hs_code": "940161",
+        "origin_country": "ES",
+        "net_weight_kg": 15.83,
+        "gross_weight_kg": 17.59,
+        "package": {
+          "length_mm": 819,
+          "width_mm": 818,
+          "height_mm": 894,
+          "type": "box"
+        }
+      },
+      {
+        "sku": "ART-ALM-1006",
+        "description": "Aparador roble macizo lacado blanco",
+        "quantity": 4,
+        "unit_price": 916.4,
+        "currency": "EUR",
+        "hs_code": "940360",
+        "origin_country": "ES",
+        "net_weight_kg": 47.05,
+        "gross_weight_kg": 52.28,
+        "package": {
+          "length_mm": 1664,
+          "width_mm": 523,
+          "height_mm": 818,
+          "type": "crate"
+        }
+      },
+      {
+        "sku": "ART-DOR-1007",
+        "description": "Cabecero haya natural aceitado",
+        "quantity": 6,
+        "unit_price": 1229.6,
+        "currency": "EUR",
+        "hs_code": "940360",
+        "origin_country": "ES",
+        "net_weight_kg": 24.64,
+        "gross_weight_kg": 27.38,
+        "package": {
+          "length_mm": 1600,
+          "width_mm": 144,
+          "height_mm": 1087,
+          "type": "box"
+        }
+      },
+      {
+        "sku": "ART-MES-1013",
+        "description": "Mesa de centro MDF chapado barniz mate",
+        "quantity": 2,
+        "unit_price": 205.9,
+        "currency": "EUR",
+        "hs_code": "940360",
+        "origin_country": "ES",
+        "net_weight_kg": 17.37,
+        "gross_weight_kg": 19.3,
+        "package": {
+          "length_mm": 1088,
+          "width_mm": 559,
+          "height_mm": 420,
+          "type": "box"
+        }
+      },
+      {
+        "sku": "ART-ALM-1022",
+        "description": "Estantería haya lacado blanco",
+        "quantity": 8,
+        "unit_price": 1029.5,
+        "currency": "EUR",
+        "hs_code": "940360",
+        "origin_country": "ES",
+        "net_weight_kg": 28.23,
+        "gross_weight_kg": 31.37,
+        "package": {
+          "length_mm": 844,
+          "width_mm": 332,
+          "height_mm": 1843,
+          "type": "box"
+        }
+      },
+      {
+        "sku": "ART-MES-1027",
+        "description": "Mesa de comedor haya lacado blanco",
+        "quantity": 3,
+        "unit_price": 704.7,
+        "currency": "EUR",
+        "hs_code": "940360",
+        "origin_country": "ES",
+        "net_weight_kg": 32.39,
+        "gross_weight_kg": 35.99,
+        "package": {
+          "length_mm": 1783,
+          "width_mm": 898,
+          "height_mm": 818,
+          "type": "box"
+        }
+      }
+    ],
+    "total": 23226.1
+  },
+  "corredor": {
+    "total": 13,
+    "always": [
+      "eu-exit-eori",
+      "eu-exit-export-declaration",
+      "eu-exit-sanctions-screening",
+      "co-entry-importer-registration",
+      "co-entry-import-declaration"
+    ],
+    "conditional": [
+      "eu-exit-dual-use",
+      "eu-exit-cites",
+      "eu-exit-cultural-goods",
+      "eu-exit-waste-shipment",
+      "co-entry-vuce-import-license",
+      "co-entry-invima-sanitary",
+      "co-entry-ica-phytosanitary",
+      "co-entry-ica-wood-packaging"
+    ]
+  },
+  "carga": {
+    "total_volume_m3": 18.91,
+    "total_weight_kg": 946.83,
+    "unfit_items": [],
+    "mode": "FCL",
+    "container": "20ST",
+    "count": 1,
+    "utilization_pct": 56.96,
+    "reason": "20' Standard: 18.91 m³ (56.96% del volumen) · 946.83 kg de 28200 kg de payload."
+  },
+  "precintos": [
+    {
+      "sku": "ART-ASI-1003",
+      "ok": true,
+      "hash": "12c552ddbffd23f1a2941defbb46dc2cc8877e07fecdf124baf15be8e1592007",
+      "uri": "https://1503.com/dpp/5501db51-8f6e-4d70-8020-d38d2ea0128a"
+    },
+    {
+      "sku": "ART-ALM-1006",
+      "ok": true,
+      "hash": "3dce56c7348966d7d20a0cec29172cb0a80f788797dc825490632dfa14529261",
+      "uri": "https://1503.com/dpp/d180d049-810e-44e0-8100-28c1b12a39c2"
+    },
+    {
+      "sku": "ART-DOR-1007",
+      "ok": true,
+      "hash": "f520d446d7520747b50b5f64bfeac450bb171b07ed4f2d68a905907ec0e5e261",
+      "uri": "https://1503.com/dpp/cb8542d4-f454-4e13-8a99-1f4f8d5541ed"
+    },
+    {
+      "sku": "ART-MES-1013",
+      "ok": true,
+      "hash": "89f5279b67ab2ebe95c753615d1b0c0499abfb79d873a623c60cd74380f9c805",
+      "uri": "https://1503.com/dpp/69b41c6d-6017-48a5-a39b-241edcc56ed5"
+    },
+    {
+      "sku": "ART-ALM-1022",
+      "ok": true,
+      "hash": "57773019015ec580370b1e0aff5beda5ef53cc9fa2486dee2e3310a663488758",
+      "uri": "https://1503.com/dpp/f03a6553-d06e-42ad-b029-7d20751516eb"
+    },
+    {
+      "sku": "ART-MES-1027",
+      "ok": true,
+      "hash": "332500bc391796c69f4ccbe526e2075f5b4d26149ea26ce8fd8598c5a6b525e0",
+      "uri": "https://1503.com/dpp/39224dd4-8a88-48c5-9627-a6c8d7b1c535"
+    }
+  ],
+  "documentos": {
+    "commercial_invoice": {
+      "doc_type": "commercial_invoice",
+      "reference": "INV-ORD-PRUEBA-001",
+      "seller": {
+        "name": "Artihome SL (Artikalia · demo)",
+        "country": "ES",
+        "role": "exporter",
+        "tax_ref": "ESB-DEMO"
+      },
+      "buyer": {
+        "name": "Importadora Andina SAS (demo)",
+        "country": "CO",
+        "role": "importer"
+      },
+      "incoterm": "CIF",
+      "currency": "EUR",
+      "lines": [
+        {
+          "sku": "ART-ASI-1003",
+          "description": "Sillón MDF chapado natural aceitado",
+          "quantity": 10,
+          "unit_price": 142.1,
+          "amount": 1421,
+          "hs_code": "940161",
+          "origin_country": "ES"
+        },
+        {
+          "sku": "ART-ALM-1006",
+          "description": "Aparador roble macizo lacado blanco",
+          "quantity": 4,
+          "unit_price": 916.4,
+          "amount": 3665.6,
+          "hs_code": "940360",
+          "origin_country": "ES"
+        },
+        {
+          "sku": "ART-DOR-1007",
+          "description": "Cabecero haya natural aceitado",
+          "quantity": 6,
+          "unit_price": 1229.6,
+          "amount": 7377.6,
+          "hs_code": "940360",
+          "origin_country": "ES"
+        },
+        {
+          "sku": "ART-MES-1013",
+          "description": "Mesa de centro MDF chapado barniz mate",
+          "quantity": 2,
+          "unit_price": 205.9,
+          "amount": 411.8,
+          "hs_code": "940360",
+          "origin_country": "ES"
+        },
+        {
+          "sku": "ART-ALM-1022",
+          "description": "Estantería haya lacado blanco",
+          "quantity": 8,
+          "unit_price": 1029.5,
+          "amount": 8236,
+          "hs_code": "940360",
+          "origin_country": "ES"
+        },
+        {
+          "sku": "ART-MES-1027",
+          "description": "Mesa de comedor haya lacado blanco",
+          "quantity": 3,
+          "unit_price": 704.7,
+          "amount": 2114.1,
+          "hs_code": "940360",
+          "origin_country": "ES"
+        }
+      ],
+      "total": 23226.1,
+      "demo": true
+    },
+    "packing_list": {
+      "doc_type": "packing_list",
+      "reference": "PL-ORD-PRUEBA-001",
+      "exporter": {
+        "name": "Artihome SL (Artikalia · demo)",
+        "country": "ES",
+        "role": "exporter",
+        "tax_ref": "ESB-DEMO"
+      },
+      "importer": {
+        "name": "Importadora Andina SAS (demo)",
+        "country": "CO",
+        "role": "importer"
+      },
+      "lines": [
+        {
+          "sku": "ART-ASI-1003",
+          "description": "Sillón MDF chapado natural aceitado",
+          "packages": 10,
+          "package_type": "box",
+          "dims_mm": "819×818×894",
+          "net_weight_kg": 158.3,
+          "gross_weight_kg": 175.9
+        },
+        {
+          "sku": "ART-ALM-1006",
+          "description": "Aparador roble macizo lacado blanco",
+          "packages": 4,
+          "package_type": "crate",
+          "dims_mm": "1664×523×818",
+          "net_weight_kg": 188.2,
+          "gross_weight_kg": 209.12
+        },
+        {
+          "sku": "ART-DOR-1007",
+          "description": "Cabecero haya natural aceitado",
+          "packages": 6,
+          "package_type": "box",
+          "dims_mm": "1600×144×1087",
+          "net_weight_kg": 147.84,
+          "gross_weight_kg": 164.28
+        },
+        {
+          "sku": "ART-MES-1013",
+          "description": "Mesa de centro MDF chapado barniz mate",
+          "packages": 2,
+          "package_type": "box",
+          "dims_mm": "1088×559×420",
+          "net_weight_kg": 34.74,
+          "gross_weight_kg": 38.6
+        },
+        {
+          "sku": "ART-ALM-1022",
+          "description": "Estantería haya lacado blanco",
+          "packages": 8,
+          "package_type": "box",
+          "dims_mm": "844×332×1843",
+          "net_weight_kg": 225.84,
+          "gross_weight_kg": 250.96
+        },
+        {
+          "sku": "ART-MES-1027",
+          "description": "Mesa de comedor haya lacado blanco",
+          "packages": 3,
+          "package_type": "box",
+          "dims_mm": "1783×898×818",
+          "net_weight_kg": 97.17,
+          "gross_weight_kg": 107.97
+        }
+      ],
+      "totals": {
+        "packages": 33,
+        "net_weight_kg": 852.09,
+        "gross_weight_kg": 946.83,
+        "volume_m3": 18.91
+      },
+      "demo": true
+    },
+    "insurance_certificate": {
+      "doc_type": "insurance_certificate",
+      "reference": "INS-ORD-PRUEBA-001",
+      "insured": {
+        "name": "Artihome SL (Artikalia · demo)",
+        "country": "ES",
+        "role": "exporter",
+        "tax_ref": "ESB-DEMO"
+      },
+      "currency": "EUR",
+      "invoice_value": 23226.1,
+      "insured_value": 25548.71,
+      "coverage": "Institute Cargo Clauses (A)",
+      "route": "ES → CO",
+      "demo": true
+    },
+    "dua": {
+      "doc_type": "dua_sad",
+      "reference": "DUA-ORD-PRUEBA-001",
+      "customs_regime": "10 00",
+      "exporter": {
+        "name": "Artihome SL (Artikalia · demo)",
+        "country": "ES",
+        "role": "exporter",
+        "tax_ref": "ESB-DEMO"
+      },
+      "importer": {
+        "name": "Importadora Andina SAS (demo)",
+        "country": "CO",
+        "role": "importer"
+      },
+      "origin_country": "ES",
+      "destination_country": "CO",
+      "currency": "EUR",
+      "items": [
+        {
+          "sku": "ART-ASI-1003",
+          "hs_code": "940161",
+          "origin_country": "ES",
+          "quantity": 10,
+          "gross_weight_kg": 175.9,
+          "statistical_value": 1421
+        },
+        {
+          "sku": "ART-ALM-1006",
+          "hs_code": "940360",
+          "origin_country": "ES",
+          "quantity": 4,
+          "gross_weight_kg": 209.12,
+          "statistical_value": 3665.6
+        },
+        {
+          "sku": "ART-DOR-1007",
+          "hs_code": "940360",
+          "origin_country": "ES",
+          "quantity": 6,
+          "gross_weight_kg": 164.28,
+          "statistical_value": 7377.6
+        },
+        {
+          "sku": "ART-MES-1013",
+          "hs_code": "940360",
+          "origin_country": "ES",
+          "quantity": 2,
+          "gross_weight_kg": 38.6,
+          "statistical_value": 411.8
+        },
+        {
+          "sku": "ART-ALM-1022",
+          "hs_code": "940360",
+          "origin_country": "ES",
+          "quantity": 8,
+          "gross_weight_kg": 250.96,
+          "statistical_value": 8236
+        },
+        {
+          "sku": "ART-MES-1027",
+          "hs_code": "940360",
+          "origin_country": "ES",
+          "quantity": 3,
+          "gross_weight_kg": 107.97,
+          "statistical_value": 2114.1
+        }
+      ],
+      "total_statistical_value": 23226.1,
+      "total_gross_weight_kg": 946.83,
+      "demo": true
+    }
+  },
+  "escrow": {
+    "id": "escrow:sim:ORD-PRUEBA-001",
+    "order_ref": "ORD-PRUEBA-001",
+    "gross": 23226.1,
+    "currency": "EUR",
+    "modality": "04_importacion",
+    "state": "released",
+    "simulated": true,
+    "settlement": {
+      "gross": 23226.1,
+      "currency": "EUR",
+      "modality": "04_importacion",
+      "rate": 0.005,
+      "fee_1503": 116.13,
+      "net_to_seller": 23109.97,
+      "rail": "xrpl_rlusd_testnet_sim",
+      "status": "settled_simulated",
+      "ledger_ref": "sim:xrpl-testnet:ORD-PRUEBA-001",
+      "verified_on_ledger": false
+    },
+    "events": [
+      {
+        "state": "opened",
+        "note": "Garantía abierta (comprador compromete el importe · simulado)"
+      },
+      {
+        "state": "funded",
+        "note": "Fondos retenidos en garantía (simulado · no custodial)"
+      },
+      {
+        "state": "released",
+        "note": "Liberado: 0,5% al hub (116.13 EUR), neto al vendedor (23109.97 EUR) · verify-on-ledger SIMULADO"
+      }
+    ]
+  }
+}

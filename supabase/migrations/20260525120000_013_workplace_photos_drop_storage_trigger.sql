@@ -1,0 +1,32 @@
+-- Migration: 013_workplace_photos_drop_storage_trigger
+-- Created: 2026-05-25
+-- Purpose: Eliminar el trigger AFTER DELETE de actor_workplace_photos que
+-- intentaba borrar el objeto en storage vía SQL directo. Supabase prohíbe
+-- la modificación directa de storage.objects desde SQL (error 42501:
+-- "Direct deletion from storage tables is not allowed. Use the Storage
+-- API instead.") incluso usando SECURITY DEFINER en una función plpgsql.
+--
+-- Sustituto: la limpieza del objeto en el bucket se hace en el endpoint
+-- DELETE /api/photos/workplace/[id] llamando a supabase.storage.from(...).
+-- remove([path]) ANTES de borrar la fila en DB. Si la llamada al storage
+-- falla la fila NO se borra y se devuelve error al cliente, evitando dejar
+-- objetos huérfanos sin trazabilidad.
+--
+-- Nota GDPR: la cascade delete auth.users -> actor_workplace_photos sigue
+-- vigente para borrar las FILAS, pero no limpia el bucket. Para una
+-- erasure completa al borrar una cuenta hay dos opciones futuras:
+--   1. Listar las fotos en el flujo de delete-account y borrarlas una a
+--      una vía la Storage API antes de eliminar al user.
+--   2. Tarea periódica (cron / edge function) que busque objetos en el
+--      bucket cuyo path no tenga fila asociada y los borre.
+-- Cualquiera de las dos se aborda cuando se cablée el flujo de borrado de
+-- cuenta. Por ahora solo desactivamos el trigger roto.
+--
+-- Cómo aplicar (manual desde Dashboard):
+--   1. https://supabase.com/dashboard/project/sqsjmmybzokcwurgruaw/sql/new
+--   2. Pegar el contenido de este archivo
+--   3. Click en Run
+--   4. Esperar "Success. No rows returned."
+
+drop trigger if exists workplace_photos_storage_cleanup on public.actor_workplace_photos;
+drop function if exists public.delete_workplace_photo_storage();

@@ -1,0 +1,80 @@
+name: Uptime · 1503.global
+
+# Chequeo externo de que el landing público responde de verdad. Vive en el repo
+# PÚBLICO a propósito: los repos públicos tienen minutos de Actions gratis e
+# ilimitados. Detecta lo que la caída del 8-jul (bucle de redirección) demostró
+# que no teníamos: aviso automático cuando el sitio se cae, sin depender de que
+# alguien lo abra por casualidad.
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # cada 10 min
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    name: HTTP 200 + contenido real + sin bucle
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probar https://1503.global
+        id: probe
+        run: |
+          set +e
+          code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 25 -H 'Accept-Language: en-US' https://1503.global/)
+          redirs=$(curl -s -o /dev/null -w '%{num_redirects}' -L --max-time 25 https://1503.global/)
+          body=$(curl -s -L --max-time 25 -H 'Accept-Language: en-US' https://1503.global/)
+          content=missing
+          echo "$body" | grep -q 'The internet of global trade' && content=ok
+          echo "HTTP=$code redirects=$redirs content=$content"
+          {
+            echo "code=$code"
+            echo "redirs=$redirs"
+            echo "content=$content"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Veredicto (falla si está caído)
+        id: verdict
+        run: |
+          code='${{ steps.probe.outputs.code }}'
+          redirs='${{ steps.probe.outputs.redirs }}'
+          content='${{ steps.probe.outputs.content }}'
+          if [ "$code" != "200" ] || [ "$content" != "ok" ] || [ "$redirs" -gt 3 ]; then
+            echo "down=true" >> "$GITHUB_OUTPUT"
+            echo "::error::1503.global CAÍDO · HTTP=$code redirects=$redirs content=$content"
+          else
+            echo "down=false" >> "$GITHUB_OUTPUT"
+            echo "1503.global OK ($code · $redirs redirects · contenido $content)"
+          fi
+
+      - name: Abrir incidencia si está caído (dedup por título)
+        if: steps.verdict.outputs.down == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="🔴 1503.global CAÍDO"
+          EXISTING=$(gh issue list --state open --search "$TITLE in:title" --json number --jq 'length')
+          BODY="Chequeo automático de uptime: HTTP=${{ steps.probe.outputs.code }}, redirects=${{ steps.probe.outputs.redirs }}, contenido=${{ steps.probe.outputs.content }}. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ "$EXISTING" -eq 0 ]; then
+            gh issue create --title "$TITLE" --body "$BODY" --label "uptime" || gh issue create --title "$TITLE" --body "$BODY"
+          else
+            echo "Ya hay una incidencia abierta · no duplico."
+          fi
+
+      - name: Cerrar incidencia si volvió a estar OK
+        if: steps.verdict.outputs.down == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --state open --search "🔴 1503.global CAÍDO in:title" --json number --jq '.[].number'); do
+            gh issue comment "$n" --body "✅ Recuperado: 1503.global responde 200 de nuevo (${{ github.run_id }})."
+            gh issue close "$n"
+          done
+
+      - name: Marcar el run como fallido si estaba caído
+        if: steps.verdict.outputs.down == 'true'
+        run: exit 1

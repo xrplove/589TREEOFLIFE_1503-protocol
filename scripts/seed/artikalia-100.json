@@ -1,0 +1,5381 @@
+[
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1000",
+    "titulo": "Estantería roble macizo nogal oscuro",
+    "precio": {
+      "valor": 1226.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1000.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 788,
+      "ancho_mm": 301,
+      "alto_mm": 1827,
+      "peso_kg": 33.46,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-07",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 81
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1001",
+    "titulo": "Estantería MDF chapado natural aceitado",
+    "precio": {
+      "valor": 568.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1001.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 813,
+      "ancho_mm": 369,
+      "alto_mm": 1837,
+      "peso_kg": 27.17,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-16",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 69
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1002",
+    "titulo": "Sillón roble macizo natural aceitado",
+    "precio": {
+      "valor": 287.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1002.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 782,
+      "ancho_mm": 864,
+      "alto_mm": 913,
+      "peso_kg": 18.23,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-25",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 72
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1003",
+    "titulo": "Sillón MDF chapado natural aceitado",
+    "precio": {
+      "valor": 142.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1003.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 819,
+      "ancho_mm": 818,
+      "alto_mm": 894,
+      "peso_kg": 17.59,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-13",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1003",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 75,
+      "contenido_reciclado_pct": 5
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1004",
+    "titulo": "Armario 2 puertas nogal natural aceitado",
+    "precio": {
+      "valor": 687.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1004.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 974,
+      "ancho_mm": 640,
+      "alto_mm": 2062,
+      "peso_kg": 68.45,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-13",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 80
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1005",
+    "titulo": "Cómoda haya barniz mate",
+    "precio": {
+      "valor": 298.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1005.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 855,
+      "ancho_mm": 432,
+      "alto_mm": 821,
+      "peso_kg": 39.8,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-03",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 79
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1006",
+    "titulo": "Aparador roble macizo lacado blanco",
+    "precio": {
+      "valor": 916.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1006.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1664,
+      "ancho_mm": 523,
+      "alto_mm": 818,
+      "peso_kg": 52.28,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-23",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1006",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 78,
+      "contenido_reciclado_pct": 21
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1007",
+    "titulo": "Cabecero haya natural aceitado",
+    "precio": {
+      "valor": 1229.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1007.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1600,
+      "ancho_mm": 144,
+      "alto_mm": 1087,
+      "peso_kg": 27.38,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-28",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-dor-1007",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 78,
+      "contenido_reciclado_pct": 18
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1008",
+    "titulo": "Cómoda pino nogal oscuro",
+    "precio": {
+      "valor": 310.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1008.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 905,
+      "ancho_mm": 462,
+      "alto_mm": 832,
+      "peso_kg": 32.7,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-23",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 73
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1009",
+    "titulo": "Cabecero haya barniz mate",
+    "precio": {
+      "valor": 1215.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1009.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1583,
+      "ancho_mm": 125,
+      "alto_mm": 1134,
+      "peso_kg": 19.93,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-01",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 75
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1010",
+    "titulo": "Mesa de comedor haya natural aceitado",
+    "precio": {
+      "valor": 174,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1010.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1830,
+      "ancho_mm": 894,
+      "alto_mm": 839,
+      "peso_kg": 36.07,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-11",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 82
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1011",
+    "titulo": "Armario 2 puertas MDF chapado natural aceitado",
+    "precio": {
+      "valor": 1264.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1011.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 972,
+      "ancho_mm": 584,
+      "alto_mm": 1975,
+      "peso_kg": 65.42,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-23",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 61
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1012",
+    "titulo": "Aparador haya barniz mate",
+    "precio": {
+      "valor": 333.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1012.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1594,
+      "ancho_mm": 406,
+      "alto_mm": 768,
+      "peso_kg": 43.37,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-05",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 81
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1013",
+    "titulo": "Mesa de centro MDF chapado barniz mate",
+    "precio": {
+      "valor": 205.9,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1013.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1088,
+      "ancho_mm": 559,
+      "alto_mm": 420,
+      "peso_kg": 19.3,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-08",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1013",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 76,
+      "contenido_reciclado_pct": 13
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1014",
+    "titulo": "Cabecero roble macizo lacado blanco",
+    "precio": {
+      "valor": 1206.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1014.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1624,
+      "ancho_mm": 71,
+      "alto_mm": 1061,
+      "peso_kg": 20.35,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-20",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 62
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1015",
+    "titulo": "Cabecero haya natural aceitado",
+    "precio": {
+      "valor": 269.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1015.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1574,
+      "ancho_mm": 90,
+      "alto_mm": 1046,
+      "peso_kg": 26.24,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-03",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 84
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1016",
+    "titulo": "Mesa de comedor nogal lacado blanco",
+    "precio": {
+      "valor": 774.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1016.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1767,
+      "ancho_mm": 932,
+      "alto_mm": 815,
+      "peso_kg": 40.46,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-13",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 67
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1017",
+    "titulo": "Cabecero pino nogal oscuro",
+    "precio": {
+      "valor": 742.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1017.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1677,
+      "ancho_mm": 95,
+      "alto_mm": 1112,
+      "peso_kg": 24.35,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-07",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 75
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1018",
+    "titulo": "Silla nogal natural aceitado",
+    "precio": {
+      "valor": 411.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1018.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 530,
+      "ancho_mm": 486,
+      "alto_mm": 832,
+      "peso_kg": 6.25,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-20",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 66
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1019",
+    "titulo": "Sillón haya lacado blanco",
+    "precio": {
+      "valor": 849.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1019.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 738,
+      "ancho_mm": 765,
+      "alto_mm": 897,
+      "peso_kg": 17.43,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-14",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 85
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1020",
+    "titulo": "Cómoda haya natural aceitado",
+    "precio": {
+      "valor": 1070.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1020.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 937,
+      "ancho_mm": 496,
+      "alto_mm": 880,
+      "peso_kg": 30.9,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-03",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 80
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1021",
+    "titulo": "Mesa de comedor MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 1232.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1021.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1745,
+      "ancho_mm": 1020,
+      "alto_mm": 812,
+      "peso_kg": 46.37,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-24",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 77
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1022",
+    "titulo": "Estantería haya lacado blanco",
+    "precio": {
+      "valor": 1029.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1022.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 844,
+      "ancho_mm": 332,
+      "alto_mm": 1843,
+      "peso_kg": 31.37,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-19",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1022",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 72,
+      "contenido_reciclado_pct": 32
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1023",
+    "titulo": "Sillón roble macizo barniz mate",
+    "precio": {
+      "valor": 472.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1023.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 769,
+      "ancho_mm": 782,
+      "alto_mm": 902,
+      "peso_kg": 18.81,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-04",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "pana",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 62
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1024",
+    "titulo": "Armario 2 puertas roble macizo natural aceitado",
+    "precio": {
+      "valor": 403.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1024.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1039,
+      "ancho_mm": 603,
+      "alto_mm": 2015,
+      "peso_kg": 88.25,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-19",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 63
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1025",
+    "titulo": "Sofá 2 plazas MDF chapado barniz mate",
+    "precio": {
+      "valor": 739.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1025.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1649,
+      "ancho_mm": 899,
+      "alto_mm": 906,
+      "peso_kg": 42.87,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-14",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 84
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1026",
+    "titulo": "Cabecero roble macizo natural aceitado",
+    "precio": {
+      "valor": 777.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1026.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1656,
+      "ancho_mm": 85,
+      "alto_mm": 1138,
+      "peso_kg": 25.67,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-08",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 80
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1027",
+    "titulo": "Mesa de comedor haya lacado blanco",
+    "precio": {
+      "valor": 704.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1027.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1783,
+      "ancho_mm": 898,
+      "alto_mm": 818,
+      "peso_kg": 35.99,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-18",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1027",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 90,
+      "contenido_reciclado_pct": 18
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1028",
+    "titulo": "Cómoda nogal nogal oscuro",
+    "precio": {
+      "valor": 719.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1028.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 856,
+      "ancho_mm": 496,
+      "alto_mm": 893,
+      "peso_kg": 37.52,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-24",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 72
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1029",
+    "titulo": "Silla roble macizo barniz mate",
+    "precio": {
+      "valor": 896.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1029.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 465,
+      "ancho_mm": 556,
+      "alto_mm": 943,
+      "peso_kg": 5.42,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-07",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 61
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1030",
+    "titulo": "Mesa de centro haya nogal oscuro",
+    "precio": {
+      "valor": 252.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1030.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1100,
+      "ancho_mm": 679,
+      "alto_mm": 478,
+      "peso_kg": 17.6,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-23",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1030",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 87,
+      "contenido_reciclado_pct": 8
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1031",
+    "titulo": "Cabecero roble macizo nogal oscuro",
+    "precio": {
+      "valor": 997.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1031.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1613,
+      "ancho_mm": 40,
+      "alto_mm": 1104,
+      "peso_kg": 25.86,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-14",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-dor-1031",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 75,
+      "contenido_reciclado_pct": 30
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1032",
+    "titulo": "Sillón roble macizo lacado blanco",
+    "precio": {
+      "valor": 1258.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1032.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 802,
+      "ancho_mm": 868,
+      "alto_mm": 931,
+      "peso_kg": 19.54,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-02",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 65
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1033",
+    "titulo": "Aparador nogal lacado blanco",
+    "precio": {
+      "valor": 684.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1033.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1583,
+      "ancho_mm": 471,
+      "alto_mm": 772,
+      "peso_kg": 42.72,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-22",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Juglans regia · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1033",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 86,
+      "contenido_reciclado_pct": 26
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1034",
+    "titulo": "Sofá 2 plazas MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 872.9,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1034.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1678,
+      "ancho_mm": 894,
+      "alto_mm": 909,
+      "peso_kg": 50.12,
+      "apilable": false,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-08",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "pana",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 65
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1035",
+    "titulo": "Sofá 2 plazas roble macizo lacado blanco",
+    "precio": {
+      "valor": 211.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1035.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1661,
+      "ancho_mm": 915,
+      "alto_mm": 835,
+      "peso_kg": 35.79,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-24",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 68
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1036",
+    "titulo": "Aparador pino lacado blanco",
+    "precio": {
+      "valor": 362.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1036.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1615,
+      "ancho_mm": 479,
+      "alto_mm": 817,
+      "peso_kg": 56.22,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-09",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 84
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1037",
+    "titulo": "Mesa de centro nogal nogal oscuro",
+    "precio": {
+      "valor": 208.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1037.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1073,
+      "ancho_mm": 667,
+      "alto_mm": 464,
+      "peso_kg": 14.64,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-09",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Juglans regia · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1037",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 78,
+      "contenido_reciclado_pct": 13
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1038",
+    "titulo": "Cómoda MDF chapado lacado blanco",
+    "precio": {
+      "valor": 176.9,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1038.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 930,
+      "ancho_mm": 500,
+      "alto_mm": 834,
+      "peso_kg": 32.1,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-18",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1038",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 80,
+      "contenido_reciclado_pct": 29
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1039",
+    "titulo": "Aparador haya natural aceitado",
+    "precio": {
+      "valor": 1020.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1039.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1669,
+      "ancho_mm": 433,
+      "alto_mm": 847,
+      "peso_kg": 52.47,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-03",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1039",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 84,
+      "contenido_reciclado_pct": 22
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1040",
+    "titulo": "Armario 2 puertas haya natural aceitado",
+    "precio": {
+      "valor": 458.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1040.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1041,
+      "ancho_mm": 587,
+      "alto_mm": 2049,
+      "peso_kg": 65.2,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-03",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1040",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 87,
+      "contenido_reciclado_pct": 25
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1041",
+    "titulo": "Silla nogal nogal oscuro",
+    "precio": {
+      "valor": 298.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1041.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 421,
+      "ancho_mm": 467,
+      "alto_mm": 849,
+      "peso_kg": 6.1,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-07",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Juglans regia · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1041",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 81,
+      "contenido_reciclado_pct": 13
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1042",
+    "titulo": "Cómoda nogal barniz mate",
+    "precio": {
+      "valor": 353.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1042.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 934,
+      "ancho_mm": 533,
+      "alto_mm": 820,
+      "peso_kg": 31.15,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-14",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 65
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1043",
+    "titulo": "Mesa de centro pino lacado blanco",
+    "precio": {
+      "valor": 614.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1043.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1062,
+      "ancho_mm": 563,
+      "alto_mm": 378,
+      "peso_kg": 17.87,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-16",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 85
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1044",
+    "titulo": "Cómoda nogal barniz mate",
+    "precio": {
+      "valor": 585.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1044.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 921,
+      "ancho_mm": 517,
+      "alto_mm": 871,
+      "peso_kg": 33.47,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-02",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 84
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1045",
+    "titulo": "Sofá 2 plazas pino natural aceitado",
+    "precio": {
+      "valor": 759.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1045.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1613,
+      "ancho_mm": 895,
+      "alto_mm": 808,
+      "peso_kg": 47.14,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-10",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Pinus sylvestris · FSC Mixto",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1045",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 74,
+      "contenido_reciclado_pct": 35
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1046",
+    "titulo": "Armario 2 puertas roble macizo lacado blanco",
+    "precio": {
+      "valor": 1064.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1046.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1006,
+      "ancho_mm": 598,
+      "alto_mm": 2078,
+      "peso_kg": 89.16,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-03",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 75
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1047",
+    "titulo": "Mesa de comedor MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 1183.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1047.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1828,
+      "ancho_mm": 1015,
+      "alto_mm": 751,
+      "peso_kg": 33.42,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-23",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1047",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 87,
+      "contenido_reciclado_pct": 13
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1048",
+    "titulo": "Cómoda roble macizo lacado blanco",
+    "precio": {
+      "valor": 121.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1048.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 885,
+      "ancho_mm": 452,
+      "alto_mm": 794,
+      "peso_kg": 33.98,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-22",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 79
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1049",
+    "titulo": "Mesa de comedor haya natural aceitado",
+    "precio": {
+      "valor": 1116.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1049.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1750,
+      "ancho_mm": 929,
+      "alto_mm": 782,
+      "peso_kg": 34.76,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-07",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1049",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 90,
+      "contenido_reciclado_pct": 18
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1050",
+    "titulo": "Sillón MDF chapado natural aceitado",
+    "precio": {
+      "valor": 719.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1050.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 791,
+      "ancho_mm": 881,
+      "alto_mm": 1030,
+      "peso_kg": 21.38,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-14",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1050",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 74,
+      "contenido_reciclado_pct": 8
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1051",
+    "titulo": "Sillón roble macizo natural aceitado",
+    "precio": {
+      "valor": 1191.9,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1051.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 806,
+      "ancho_mm": 765,
+      "alto_mm": 920,
+      "peso_kg": 18.8,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-07",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 78
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1052",
+    "titulo": "Sofá 2 plazas roble macizo nogal oscuro",
+    "precio": {
+      "valor": 1310.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1052.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1561,
+      "ancho_mm": 846,
+      "alto_mm": 814,
+      "peso_kg": 41.37,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-07",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1052",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 78,
+      "contenido_reciclado_pct": 18
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1053",
+    "titulo": "Mesa de centro nogal natural aceitado",
+    "precio": {
+      "valor": 884.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1053.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1079,
+      "ancho_mm": 564,
+      "alto_mm": 408,
+      "peso_kg": 15.48,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-12",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 71
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1054",
+    "titulo": "Cómoda roble macizo natural aceitado",
+    "precio": {
+      "valor": 745.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1054.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 896,
+      "ancho_mm": 523,
+      "alto_mm": 882,
+      "peso_kg": 35.32,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-25",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 61
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1055",
+    "titulo": "Armario 2 puertas nogal nogal oscuro",
+    "precio": {
+      "valor": 652.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1055.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 988,
+      "ancho_mm": 660,
+      "alto_mm": 2056,
+      "peso_kg": 83.06,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-13",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 78
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1056",
+    "titulo": "Sofá 2 plazas pino barniz mate",
+    "precio": {
+      "valor": 832.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1056.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1579,
+      "ancho_mm": 850,
+      "alto_mm": 866,
+      "peso_kg": 51.84,
+      "apilable": false,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-27",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Pinus sylvestris · FSC Mixto",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1056",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 80,
+      "contenido_reciclado_pct": 25
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1057",
+    "titulo": "Cómoda haya nogal oscuro",
+    "precio": {
+      "valor": 849.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1057.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 877,
+      "ancho_mm": 551,
+      "alto_mm": 859,
+      "peso_kg": 38.36,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-23",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 80
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1058",
+    "titulo": "Sofá 2 plazas pino nogal oscuro",
+    "precio": {
+      "valor": 611.9,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1058.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1560,
+      "ancho_mm": 958,
+      "alto_mm": 878,
+      "peso_kg": 42.35,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-15",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "lino",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Pinus sylvestris · FSC Mixto",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1058",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 71,
+      "contenido_reciclado_pct": 11
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1059",
+    "titulo": "Sillón pino lacado blanco",
+    "precio": {
+      "valor": 788.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1059.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 721,
+      "ancho_mm": 887,
+      "alto_mm": 922,
+      "peso_kg": 21.05,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-02",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "lino",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 75
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1060",
+    "titulo": "Sillón haya lacado blanco",
+    "precio": {
+      "valor": 887.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1060.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 790,
+      "ancho_mm": 831,
+      "alto_mm": 983,
+      "peso_kg": 21.72,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-10",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1060",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 83,
+      "contenido_reciclado_pct": 23
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1061",
+    "titulo": "Estantería MDF chapado barniz mate",
+    "precio": {
+      "valor": 371.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1061.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 858,
+      "ancho_mm": 373,
+      "alto_mm": 1805,
+      "peso_kg": 31.5,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-16",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 84
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1062",
+    "titulo": "Mesa de comedor MDF chapado barniz mate",
+    "precio": {
+      "valor": 435,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1062.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1856,
+      "ancho_mm": 1023,
+      "alto_mm": 813,
+      "peso_kg": 36.87,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-06",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1062",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 82,
+      "contenido_reciclado_pct": 34
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1063",
+    "titulo": "Aparador MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 1009.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1063.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1672,
+      "ancho_mm": 412,
+      "alto_mm": 863,
+      "peso_kg": 48.3,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-07",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 77
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1064",
+    "titulo": "Sillón MDF chapado barniz mate",
+    "precio": {
+      "valor": 797.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1064.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 746,
+      "ancho_mm": 881,
+      "alto_mm": 913,
+      "peso_kg": 19.86,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-13",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1064",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 85,
+      "contenido_reciclado_pct": 6
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1065",
+    "titulo": "Cómoda roble macizo natural aceitado",
+    "precio": {
+      "valor": 124.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1065.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 912,
+      "ancho_mm": 477,
+      "alto_mm": 807,
+      "peso_kg": 38.66,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-09",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1065",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 73,
+      "contenido_reciclado_pct": 19
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1066",
+    "titulo": "Sillón MDF chapado lacado blanco",
+    "precio": {
+      "valor": 420.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1066.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 753,
+      "ancho_mm": 801,
+      "alto_mm": 1028,
+      "peso_kg": 20.86,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-11",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1066",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 74,
+      "contenido_reciclado_pct": 23
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1067",
+    "titulo": "Mesa de centro MDF chapado natural aceitado",
+    "precio": {
+      "valor": 1299.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1067.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1116,
+      "ancho_mm": 579,
+      "alto_mm": 486,
+      "peso_kg": 19.33,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-22",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 68
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1068",
+    "titulo": "Armario 2 puertas roble macizo barniz mate",
+    "precio": {
+      "valor": 435,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1068.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1071,
+      "ancho_mm": 603,
+      "alto_mm": 2019,
+      "peso_kg": 64.14,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-13",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 85
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1069",
+    "titulo": "Sillón roble macizo natural aceitado",
+    "precio": {
+      "valor": 284.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1069.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 725,
+      "ancho_mm": 890,
+      "alto_mm": 1005,
+      "peso_kg": 19.63,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-14",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "pana",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 68
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1070",
+    "titulo": "Sofá 2 plazas haya barniz mate",
+    "precio": {
+      "valor": 611.9,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1070.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1607,
+      "ancho_mm": 904,
+      "alto_mm": 883,
+      "peso_kg": 36.6,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-28",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 68
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-DOR-1071",
+    "titulo": "Cabecero MDF chapado barniz mate",
+    "precio": {
+      "valor": 838.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-dor-1071.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1565,
+      "ancho_mm": 102,
+      "alto_mm": 1041,
+      "peso_kg": 19.86,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-23",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-dor-1071",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 78,
+      "contenido_reciclado_pct": 23
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1072",
+    "titulo": "Silla MDF chapado natural aceitado",
+    "precio": {
+      "valor": 551,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1072.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 536,
+      "ancho_mm": 510,
+      "alto_mm": 914,
+      "peso_kg": 5.26,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-12",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "lino",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 70
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1073",
+    "titulo": "Estantería pino nogal oscuro",
+    "precio": {
+      "valor": 272.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1073.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 773,
+      "ancho_mm": 298,
+      "alto_mm": 1871,
+      "peso_kg": 34.85,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-11",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 68
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1074",
+    "titulo": "Mesa de centro pino lacado blanco",
+    "precio": {
+      "valor": 759.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1074.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1144,
+      "ancho_mm": 656,
+      "alto_mm": 379,
+      "peso_kg": 19.8,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-17",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 69
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1075",
+    "titulo": "Estantería MDF chapado natural aceitado",
+    "precio": {
+      "valor": 339.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1075.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 819,
+      "ancho_mm": 280,
+      "alto_mm": 1852,
+      "peso_kg": 33.92,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-19",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1075",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 89,
+      "contenido_reciclado_pct": 19
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1076",
+    "titulo": "Silla nogal nogal oscuro",
+    "precio": {
+      "valor": 803.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1076.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 502,
+      "ancho_mm": 492,
+      "alto_mm": 860,
+      "peso_kg": 6.59,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-10",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "lino",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 75
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1077",
+    "titulo": "Estantería haya lacado blanco",
+    "precio": {
+      "valor": 223.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1077.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 773,
+      "ancho_mm": 285,
+      "alto_mm": 1842,
+      "peso_kg": 33.49,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-17",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 74
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1078",
+    "titulo": "Cómoda MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 229.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1078.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 934,
+      "ancho_mm": 472,
+      "alto_mm": 836,
+      "peso_kg": 31.05,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-01",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 78
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1079",
+    "titulo": "Mesa de centro MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 875.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1079.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1060,
+      "ancho_mm": 663,
+      "alto_mm": 362,
+      "peso_kg": 14.11,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-05",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-mes-1079",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 72,
+      "contenido_reciclado_pct": 26
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1080",
+    "titulo": "Sillón roble macizo nogal oscuro",
+    "precio": {
+      "valor": 881.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1080.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 837,
+      "ancho_mm": 866,
+      "alto_mm": 971,
+      "peso_kg": 18.67,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-10",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 16139 nivel L2 (contract)",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1080",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 83,
+      "contenido_reciclado_pct": 24
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1081",
+    "titulo": "Aparador nogal nogal oscuro",
+    "precio": {
+      "valor": 875.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1081.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1592,
+      "ancho_mm": 495,
+      "alto_mm": 773,
+      "peso_kg": 45.61,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-06",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 85
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1082",
+    "titulo": "Sillón roble macizo barniz mate",
+    "precio": {
+      "valor": 994.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1082.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 804,
+      "ancho_mm": 764,
+      "alto_mm": 964,
+      "peso_kg": 20.68,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-13",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "cuero",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1082",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 84,
+      "contenido_reciclado_pct": 28
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-MES-1083",
+    "titulo": "Mesa de comedor nogal nogal oscuro",
+    "precio": {
+      "valor": 217.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-mes-1083.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1818,
+      "ancho_mm": 945,
+      "alto_mm": 713,
+      "peso_kg": 37.23,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-09",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 72
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1084",
+    "titulo": "Estantería roble macizo nogal oscuro",
+    "precio": {
+      "valor": 725,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1084.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 742,
+      "ancho_mm": 357,
+      "alto_mm": 1841,
+      "peso_kg": 27.84,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-28",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 85
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1085",
+    "titulo": "Estantería MDF chapado nogal oscuro",
+    "precio": {
+      "valor": 730.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1085.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 866,
+      "ancho_mm": 398,
+      "alto_mm": 1861,
+      "peso_kg": 24.71,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-17",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1085",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 75,
+      "contenido_reciclado_pct": 31
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1086",
+    "titulo": "Armario 2 puertas haya natural aceitado",
+    "precio": {
+      "valor": 983.1,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1086.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1042,
+      "ancho_mm": 567,
+      "alto_mm": 2021,
+      "peso_kg": 64.84,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-11",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Fagus sylvatica · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1086",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 78,
+      "contenido_reciclado_pct": 33
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1087",
+    "titulo": "Aparador MDF chapado lacado blanco",
+    "precio": {
+      "valor": 217.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1087.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1631,
+      "ancho_mm": 513,
+      "alto_mm": 758,
+      "peso_kg": 49.09,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-18",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 66
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1088",
+    "titulo": "Cómoda nogal barniz mate",
+    "precio": {
+      "valor": 156.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1088.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 864,
+      "ancho_mm": 542,
+      "alto_mm": 806,
+      "peso_kg": 39.72,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-06-12",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 77
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1089",
+    "titulo": "Aparador MDF chapado lacado blanco",
+    "precio": {
+      "valor": 1171.6,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1089.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1577,
+      "ancho_mm": 506,
+      "alto_mm": 783,
+      "peso_kg": 41.34,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-17",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "tablero MDF E1 · PEFC",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1089",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 80,
+      "contenido_reciclado_pct": 22
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1090",
+    "titulo": "Sillón haya lacado blanco",
+    "precio": {
+      "valor": 1247,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1090.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 752,
+      "ancho_mm": 832,
+      "alto_mm": 995,
+      "peso_kg": 19.1,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-13",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 79
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1091",
+    "titulo": "Sillón haya natural aceitado",
+    "precio": {
+      "valor": 994.7,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1091.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 837,
+      "ancho_mm": 819,
+      "alto_mm": 955,
+      "peso_kg": 18.68,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-09",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 70
+      },
+      {
+        "nombre": "tela",
+        "porcentaje": 25
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 79
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1092",
+    "titulo": "Armario 2 puertas MDF chapado lacado blanco",
+    "precio": {
+      "valor": 565.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1092.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1039,
+      "ancho_mm": 582,
+      "alto_mm": 2021,
+      "peso_kg": 89.53,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-25",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "MDF chapado",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 64
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1093",
+    "titulo": "Estantería roble macizo barniz mate",
+    "precio": {
+      "valor": 406,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1093.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 756,
+      "ancho_mm": 302,
+      "alto_mm": 1767,
+      "peso_kg": 27.72,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-04-24",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1093",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 72,
+      "contenido_reciclado_pct": 5
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1094",
+    "titulo": "Cómoda haya barniz mate",
+    "precio": {
+      "valor": 1136.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1094.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 936,
+      "ancho_mm": 522,
+      "alto_mm": 830,
+      "peso_kg": 40.19,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-01-01",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 82
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ASI-1095",
+    "titulo": "Silla pino natural aceitado",
+    "precio": {
+      "valor": 829.4,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-asi-1095.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 496,
+      "ancho_mm": 477,
+      "alto_mm": 843,
+      "peso_kg": 6.9,
+      "apilable": false,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-03-11",
+    "hs_code": "940161",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Pinus sylvestris · FSC Mixto",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-asi-1095",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 72,
+      "contenido_reciclado_pct": 34
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1096",
+    "titulo": "Aparador roble macizo nogal oscuro",
+    "precio": {
+      "valor": 1354.3,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1096.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1607,
+      "ancho_mm": 404,
+      "alto_mm": 782,
+      "peso_kg": 40.65,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-04",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "roble macizo",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Quercus robur · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1096",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 79,
+      "contenido_reciclado_pct": 26
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1097",
+    "titulo": "Aparador haya lacado blanco",
+    "precio": {
+      "valor": 951.2,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1097.jpg"
+    ],
+    "certificados": [
+      "PEFC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1585,
+      "ancho_mm": 472,
+      "alto_mm": 846,
+      "peso_kg": 46.99,
+      "apilable": true,
+      "tipo": "box"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-05-09",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "haya",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "reciclabilidad_pct": 79
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": false
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1098",
+    "titulo": "Aparador pino lacado blanco",
+    "precio": {
+      "valor": 353.8,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1098.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 1541,
+      "ancho_mm": 433,
+      "alto_mm": 759,
+      "peso_kg": 55.57,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-04",
+    "hs_code": "940360",
+    "materiales": [
+      {
+        "nombre": "pino",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Pinus sylvestris · FSC Mixto",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12521 · doméstico",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1098",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 81,
+      "contenido_reciclado_pct": 25
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  },
+  {
+    "contrato_version": "conector@1.0",
+    "sku": "ART-ALM-1099",
+    "titulo": "Armario 2 puertas nogal natural aceitado",
+    "precio": {
+      "valor": 1087.5,
+      "moneda": "EUR",
+      "iva_incluido": true
+    },
+    "imagenes": [
+      "https://demo.artikalia.example/catalogo/art-alm-1099.jpg"
+    ],
+    "certificados": [
+      "FSC",
+      "CE"
+    ],
+    "bulto": {
+      "largo_mm": 971,
+      "ancho_mm": 520,
+      "alto_mm": 2029,
+      "peso_kg": 66.14,
+      "apilable": true,
+      "tipo": "crate"
+    },
+    "pais_origen": "ES",
+    "pais_fabricacion": "ES",
+    "fecha_produccion": "2026-02-02",
+    "hs_code": "940350",
+    "materiales": [
+      {
+        "nombre": "nogal",
+        "porcentaje": 95
+      },
+      {
+        "nombre": "herrajes acero",
+        "porcentaje": 5
+      }
+    ],
+    "espr": {
+      "origen_madera": "Juglans regia · FSC 100%",
+      "sustancias_preocupantes": {
+        "declarado": true,
+        "lista": []
+      },
+      "durabilidad": "EN 12520 · uso doméstico severo",
+      "desmontaje_reparacion": "https://demo.artikalia.example/repair/art-alm-1099",
+      "recambios": "Herrajes y tornillería · 10 años",
+      "reciclabilidad_pct": 86,
+      "contenido_reciclado_pct": 24
+    },
+    "_demo": {
+      "tenant": "artikalia-pilot",
+      "dpp_simulado": true,
+      "ready2028": true
+    }
+  }
+]

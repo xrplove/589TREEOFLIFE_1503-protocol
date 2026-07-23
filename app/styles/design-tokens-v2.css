@@ -1,0 +1,287 @@
+/* ─────────────────────────────────────────────────────────────────────
+   1503 — Design Tokens v2 · HOLO PREMIUM
+   ─────────────────────────────────────────────────────────────────────
+   Sistema visual de segunda generación. Apunta al "wow factor" Tony Stark
+   / Bloomberg / Apple Vision Pro discutido con José el 26-may-2026 tras
+   revisar 3 referencias de mockups (cliente_b2b / tony_stark / luxury_finance).
+
+   Mantiene la identidad cyan 1503 (DS v1) pero pivota a:
+   - Fondo navy mate profundo (no negro absoluto · más cálido para uso prolongado)
+   - Acento secundario amber/dorado SÓLO en momentos premium (tier Oro ·
+     notificaciones críticas · status de excelencia)
+   - Glassmorphism real (backdrop-blur 16-24px) en panels flotantes
+   - Glows holográficos más sutiles que DS v1 (no agresivos · uso prolongado)
+   - Animaciones premium con framer-motion (entrada · hover · transición)
+   - Three.js para signatures visuales (constelación + hexagon 3D)
+
+   Referencias visuales: 3 mockups IA (Midjourney/DALL-E) facilitados por
+   José el 26-may-2026 + DS v1 cyan/HUD existente como base de identidad.
+
+   NO sustituye el DS v1 todavía. Convive durante semana 1 hasta validación.
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── COLORES — FONDOS NAVY MATE ──────────────────────────────────── */
+  --pm2-bg-deepest: #050B18;       /* body · más profundo · página entera */
+  --pm2-bg-deep: #0A1428;          /* paneles principales · fondo navy mate */
+  --pm2-bg-base: #0F1B33;          /* cards en reposo */
+  --pm2-bg-elev: #142340;          /* cards elevados · panels flotantes */
+  --pm2-bg-overlay: #1A2D4F;       /* hover · sub-paneles · drawers */
+  --pm2-bg-input: #0C1729;         /* inputs · search · select */
+
+  /* ── COLORES — BORDES ────────────────────────────────────────────── */
+  --pm2-border-faint: #1A2541;     /* borde casi invisible · separators */
+  --pm2-border-subtle: #243352;    /* borde de reposo · cards */
+  --pm2-border-emphasis: #34466C;  /* borde de hover */
+  --pm2-border-cyan: #2FD2C9;      /* borde acento activo */
+  --pm2-border-amber: #FFD580;     /* borde acento premium / tier Oro */
+
+  /* ── COLORES — ACENTO CYAN (identidad 1503) ───────────────── */
+  --pm2-cyan: #2FD2C9;
+  --pm2-cyan-bright: #5FE6DD;       /* hover · highlights */
+  --pm2-cyan-soft: rgba(47, 210, 201, 0.08);   /* halo background sutil */
+  --pm2-cyan-medium: rgba(47, 210, 201, 0.18); /* halo medio */
+  --pm2-cyan-strong: rgba(47, 210, 201, 0.35); /* glow estado activo */
+  --pm2-cyan-text: #5FE6DD;         /* texto cyan suave (mayor legibilidad sobre dark) */
+
+  /* ── COLORES — ACENTO AMBER (premium · tier Oro · notif críticas) ─ */
+  --pm2-amber: #FFD580;
+  --pm2-amber-bright: #FFE5A8;
+  --pm2-amber-soft: rgba(255, 213, 128, 0.08);
+  --pm2-amber-medium: rgba(255, 213, 128, 0.18);
+  --pm2-amber-strong: rgba(255, 213, 128, 0.35);
+
+  /* ── COLORES — ACENTOS FUNCIONALES ───────────────────────────────── */
+  --pm2-success: #2EFF8C;          /* OK · online · KYC aprobado */
+  --pm2-success-soft: rgba(46, 255, 140, 0.10);
+  --pm2-warning: #F0B429;          /* atención · pendiente */
+  --pm2-warning-soft: rgba(240, 180, 41, 0.10);
+  --pm2-danger: #FF5A6A;           /* error · rechazo · suspensión */
+  --pm2-danger-soft: rgba(255, 90, 106, 0.10);
+  --pm2-info: #5FE6DD;             /* información · neutral */
+
+  /* ── COLORES — TIERS (niveles de prestigio/reputación) ───────────── */
+  --pm2-tier-bronce: #CD7F32;
+  --pm2-tier-plata: #D0D0D0;
+  --pm2-tier-oro: #FFD580;         /* alineado con amber premium */
+
+  /* ── COLORES — TEXTO ─────────────────────────────────────────────── */
+  --pm2-text-primary: #E8F0FA;     /* texto principal · blanco azulado */
+  --pm2-text-secondary: #A8BCD6;   /* texto secundario · descriptivo */
+  --pm2-text-muted: #6B7E9A;       /* labels · captions · deshabilitado */
+  --pm2-text-cyan: #5FE6DD;        /* acento cyan en texto */
+  --pm2-text-amber: #FFD580;       /* acento amber · premium */
+  --pm2-text-on-cyan: #050B18;     /* texto sobre fondo cyan brillante */
+  --pm2-text-on-amber: #1F1407;    /* texto sobre fondo amber · cálido oscuro */
+
+  /* ── TIPOGRAFÍA ──────────────────────────────────────────────────── */
+  --pm2-font-display: var(--font-chakra-petch), system-ui, sans-serif;
+  --pm2-font-body: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --pm2-font-mono: var(--font-dm-mono), 'JetBrains Mono', monospace;
+
+  /* Escala tipográfica · minor third (1.25x) anclada en 14px */
+  --pm2-text-xs: 0.625rem;     /* 10px · micro-labels · IDs · monospace HUD */
+  --pm2-text-sm: 0.75rem;      /* 12px · captions · meta · monospace */
+  --pm2-text-base: 0.875rem;   /* 14px · body */
+  --pm2-text-md: 1rem;         /* 16px · destacado · subtitles */
+  --pm2-text-lg: 1.25rem;      /* 20px · titles cards */
+  --pm2-text-xl: 1.75rem;      /* 28px · titles sección */
+  --pm2-text-2xl: 2.25rem;     /* 36px · titles página */
+  --pm2-text-3xl: 3rem;        /* 48px · hero */
+  --pm2-text-4xl: 4rem;        /* 64px · display extremo */
+
+  /* Tracking (letter-spacing) */
+  --pm2-tracking-tight: -0.01em;
+  --pm2-tracking-normal: 0;
+  --pm2-tracking-wide: 0.06em;
+  --pm2-tracking-wider: 0.12em;
+  --pm2-tracking-widest: 0.20em;
+
+  /* Line heights */
+  --pm2-leading-tight: 1.2;
+  --pm2-leading-normal: 1.45;
+  --pm2-leading-relaxed: 1.65;
+
+  /* ── SPACING · escala base 4 ─────────────────────────────────────── */
+  --pm2-space-0: 0;
+  --pm2-space-1: 4px;
+  --pm2-space-2: 8px;
+  --pm2-space-3: 12px;
+  --pm2-space-4: 16px;
+  --pm2-space-5: 20px;
+  --pm2-space-6: 24px;
+  --pm2-space-7: 32px;
+  --pm2-space-8: 40px;
+  --pm2-space-9: 56px;
+  --pm2-space-10: 72px;
+  --pm2-space-11: 96px;
+
+  /* ── RADII ───────────────────────────────────────────────────────── */
+  --pm2-radius-xs: 2px;
+  --pm2-radius-sm: 4px;
+  --pm2-radius-md: 8px;        /* default cards */
+  --pm2-radius-lg: 12px;       /* panels grandes */
+  --pm2-radius-xl: 16px;       /* modales · drawers */
+  --pm2-radius-full: 9999px;
+
+  /* ── SOMBRAS (sutiles · uso prolongado) ──────────────────────────── */
+  --pm2-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --pm2-shadow-md: 0 6px 18px rgba(0, 0, 0, 0.55);
+  --pm2-shadow-lg: 0 14px 40px rgba(0, 0, 0, 0.65);
+  --pm2-shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.75);
+
+  /* ── GLOWS HOLOGRÁFICOS (sutiles · activable por estado) ─────────── */
+  --pm2-glow-cyan-faint: 0 0 8px rgba(47, 210, 201, 0.08);
+  --pm2-glow-cyan-soft: 0 0 12px rgba(47, 210, 201, 0.14);
+  --pm2-glow-cyan-medium: 0 0 18px rgba(47, 210, 201, 0.22);
+  --pm2-glow-cyan-strong: 0 0 24px rgba(47, 210, 201, 0.30);
+
+  --pm2-glow-amber-soft: 0 0 14px rgba(255, 213, 128, 0.20);
+  --pm2-glow-amber-medium: 0 0 22px rgba(255, 213, 128, 0.32);
+  --pm2-glow-amber-strong: 0 0 32px rgba(255, 213, 128, 0.45);
+
+  --pm2-glow-success: 0 0 16px rgba(46, 255, 140, 0.30);
+  --pm2-glow-danger: 0 0 16px rgba(255, 90, 106, 0.30);
+
+  /* ── BACKDROP BLUR (glassmorphism) ──────────────────────────────── */
+  --pm2-blur-sm: 8px;
+  --pm2-blur-md: 16px;
+  --pm2-blur-lg: 24px;
+  --pm2-blur-xl: 32px;
+
+  /* ── TRANSICIONES ────────────────────────────────────────────────── */
+  --pm2-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --pm2-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --pm2-ease-snappy: cubic-bezier(0.5, 1.5, 0.6, 1);
+  --pm2-duration-instant: 100ms;
+  --pm2-duration-fast: 180ms;
+  --pm2-duration-base: 280ms;
+  --pm2-duration-slow: 480ms;
+  --pm2-duration-slower: 720ms;
+
+  /* ── Z-INDEX SCALE ───────────────────────────────────────────────── */
+  --pm2-z-base: 0;
+  --pm2-z-raised: 10;
+  --pm2-z-dropdown: 100;
+  --pm2-z-sticky: 200;
+  --pm2-z-overlay: 500;
+  --pm2-z-modal: 1000;
+  --pm2-z-tooltip: 2000;
+  --pm2-z-notification: 5000;
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   KEYFRAMES HOLOGRÁFICOS
+   ════════════════════════════════════════════════════════════════════ */
+
+/* Pulso suave cyan · status activo · indicador live */
+@keyframes pm2-pulse-cyan {
+  0%, 100% {
+    box-shadow: var(--pm2-glow-cyan-soft);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: var(--pm2-glow-cyan-strong);
+    opacity: 0.92;
+  }
+}
+
+/* Pulso amber · tier Oro · premium */
+@keyframes pm2-pulse-amber {
+  0%, 100% {
+    box-shadow: var(--pm2-glow-amber-soft);
+  }
+  50% {
+    box-shadow: var(--pm2-glow-amber-strong);
+  }
+}
+
+/* Shimmer · loading skeleton · gradiente horizontal */
+@keyframes pm2-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Scan-line · línea cyan recorriendo card · efecto HUD escaneo */
+@keyframes pm2-scan-line {
+  0% { transform: translateX(-100%); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% { transform: translateX(200%); opacity: 0; }
+}
+
+/* Float · elemento flotando suavemente (hexagon · holograma) */
+@keyframes pm2-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Rotate slow · hexagon 3D girando muy despacio */
+@keyframes pm2-rotate-slow {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+/* Reveal up · entrada de cards desde abajo con fade */
+@keyframes pm2-reveal-up {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glow breathe · sutil expansión de glow · ambient */
+@keyframes pm2-glow-breathe {
+  0%, 100% {
+    box-shadow: var(--pm2-glow-cyan-faint);
+  }
+  50% {
+    box-shadow: var(--pm2-glow-cyan-soft);
+  }
+}
+
+/* Blink HUD · cursor monospace */
+@keyframes pm2-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+/* ════════════════════════════════════════════════════════════════════
+   UTILIDADES REUTILIZABLES (clases · usar con prudencia)
+   ════════════════════════════════════════════════════════════════════ */
+
+/* Glassmorphism estándar para panels flotantes */
+.pm2-glass {
+  background: rgba(20, 35, 64, 0.55);
+  backdrop-filter: blur(var(--pm2-blur-md)) saturate(140%);
+  -webkit-backdrop-filter: blur(var(--pm2-blur-md)) saturate(140%);
+  border: 1px solid var(--pm2-border-subtle);
+}
+
+/* Texto holográfico cyan · uso destacado */
+.pm2-text-holo-cyan {
+  color: var(--pm2-cyan-text);
+  text-shadow: 0 0 8px rgba(47, 210, 201, 0.45);
+}
+
+/* Texto holográfico amber · uso premium */
+.pm2-text-holo-amber {
+  color: var(--pm2-amber);
+  text-shadow: 0 0 8px rgba(255, 213, 128, 0.45);
+}
+
+/* Reduce motion respect · cumple WCAG */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

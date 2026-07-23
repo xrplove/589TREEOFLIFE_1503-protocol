@@ -1,0 +1,12 @@
+# 1503 · security.txt (RFC 9116)
+# Generated 2026-05-29 · pendiente publicación productiva
+# CRA Reg. UE 2024/2847 Art. 13 · canal vulnerability disclosure obligatorio
+
+Contact: mailto:security@1503.global
+Expires: 2027-05-29T00:00:00.000Z
+Preferred-Languages: es, en
+Policy: https://1503.global/security/vulnerability-disclosure
+Acknowledgments: https://1503.global/security/hall-of-fame
+Canonical: https://1503.global/.well-known/security.txt
+# Encryption: pendiente publicar PGP key fingerprint
+# Hiring: https://1503.global/careers (pendiente)

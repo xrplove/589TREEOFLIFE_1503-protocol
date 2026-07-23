@@ -1,0 +1,124 @@
+/* ─────────────────────────────────────────────────────────────────────
+   1503 — Design Tokens v1
+   Sistema de diseño visual centralizado. Cualquier componente debe leer
+   colores, tipografía, spacing y radii desde aquí (variables CSS) y NO
+   hardcodear valores. Permite repintar toda la plataforma cambiando un
+   solo archivo.
+
+   Referencias visuales (25-may-2026): Global Digital Network Map
+   (DreamsTime) + UI HUD Friday AI. Paleta cyan brillante + negros
+   azulados profundos. Estética tecnológica/HUD/dashboard de operaciones.
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── COLORES — FONDOS ────────────────────────────────────────────── */
+  --pm-bg-deep: #050810;          /* fondo más profundo (página, body) */
+  --pm-bg-base: #0A0E18;          /* fondo base de paneles principales */
+  --pm-bg-elev: #11182A;          /* fondo elevado de cards */
+  --pm-bg-overlay: #1A2238;       /* fondo de panel sobre panel */
+  --pm-bg-input: #0E1422;         /* fondo de inputs / search */
+
+  /* ── COLORES — BORDES ────────────────────────────────────────────── */
+  --pm-border-subtle: #1E2A3E;    /* borde fino de paneles en reposo */
+  --pm-border-emphasis: #2A3A52;  /* borde más visible, hover */
+  --pm-border-active: #00D4FF;    /* cyan brillante: focus, drag, selección */
+
+  /* ── COLORES — ACENTOS ───────────────────────────────────────────── */
+  --pm-accent-primary: #00D4FF;       /* cyan brillante "vivo" — botones, focus */
+  --pm-accent-primary-soft: rgba(0, 212, 255, 0.12);   /* fondo halo cyan */
+  --pm-accent-primary-glow: rgba(0, 212, 255, 0.45);   /* glow cyan medio */
+  --pm-accent-secondary: #5EEAFF;     /* cyan claro — hover suave, brillos */
+  --pm-accent-success: #2EFF8C;       /* verde cyan — OK, online */
+  --pm-accent-warning: #F0B429;       /* amarillo — mantiene del actual */
+  --pm-accent-danger: #FF5A6A;        /* rojo coral — errores, borrar */
+
+  /* ── COLORES — TEXTO ─────────────────────────────────────────────── */
+  --pm-text-primary: #E8F0FA;     /* blanco azulado — texto principal */
+  --pm-text-secondary: #94A8BE;   /* gris cyan — texto secundario */
+  --pm-text-muted: #5A6E84;       /* gris azulado — deshabilitado, labels */
+  --pm-text-cyan: #5EEAFF;        /* acento cyan en texto */
+  --pm-text-on-accent: #050810;   /* texto sobre fondo cyan brillante */
+
+  /* ── TIPOGRAFÍA ──────────────────────────────────────────────────── */
+  /* Las CSS vars de fuentes vienen de next/font en layout.tsx
+     (--font-chakra-petch, --font-dm-mono, --font-geist-sans).
+     Aquí las agrupamos por rol semántico. */
+  --pm-font-display: var(--font-chakra-petch), system-ui, sans-serif;
+  --pm-font-body: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --pm-font-mono: var(--font-dm-mono), 'JetBrains Mono', monospace;
+
+  /* Escala tipográfica — minor third (1.25x) anclada en 14px */
+  --pm-text-xs: 0.625rem;     /* 10px — micro-labels, badges, IDs HUD */
+  --pm-text-sm: 0.75rem;      /* 12px — secondary, captions, monospace */
+  --pm-text-base: 0.875rem;   /* 14px — body */
+  --pm-text-md: 1rem;         /* 16px — destacado */
+  --pm-text-lg: 1.25rem;      /* 20px — subtítulos */
+  --pm-text-xl: 1.75rem;      /* 28px — títulos sección */
+  --pm-text-2xl: 2.25rem;     /* 36px — títulos página */
+  --pm-text-3xl: 3rem;        /* 48px — hero */
+
+  /* Tracking (letter-spacing) para uppercase HUD */
+  --pm-tracking-tight: 0;
+  --pm-tracking-wide: 0.08em;
+  --pm-tracking-wider: 0.16em;
+  --pm-tracking-widest: 0.24em;
+
+  /* ── SPACING — escala base 4 ─────────────────────────────────────── */
+  --pm-space-1: 4px;
+  --pm-space-2: 8px;
+  --pm-space-3: 12px;
+  --pm-space-4: 16px;
+  --pm-space-5: 24px;
+  --pm-space-6: 32px;
+  --pm-space-7: 48px;
+  --pm-space-8: 64px;
+
+  /* ── RADII ───────────────────────────────────────────────────────── */
+  --pm-radius-sm: 3px;        /* botones, badges */
+  --pm-radius-md: 6px;        /* cards, paneles */
+  --pm-radius-lg: 12px;       /* modales */
+  --pm-radius-full: 9999px;   /* círculos, pills */
+
+  /* ── SOMBRAS ─────────────────────────────────────────────────────── */
+  --pm-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --pm-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --pm-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.65);
+
+  /* ── GLOWS CYAN ──────────────────────────────────────────────────── */
+  --pm-glow-cyan-soft: 0 0 12px rgba(0, 212, 255, 0.18);
+  --pm-glow-cyan-md: 0 0 24px rgba(0, 212, 255, 0.30);
+  --pm-glow-cyan-strong: 0 0 32px rgba(0, 212, 255, 0.55);
+
+  /* ── TRANSICIONES ────────────────────────────────────────────────── */
+  --pm-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --pm-duration-fast: 120ms;
+  --pm-duration-base: 200ms;
+  --pm-duration-slow: 350ms;
+}
+
+/* ── KEYFRAMES REUTILIZABLES ────────────────────────────────────── */
+
+/* Pulso suave para elementos activos (IA hablando, slot subiendo, etc.) */
+@keyframes pm-pulse-cyan {
+  0%, 100% { box-shadow: var(--pm-glow-cyan-soft); }
+  50% { box-shadow: var(--pm-glow-cyan-strong); }
+}
+
+/* Escaneo HUD — línea fina recorriendo de izquierda a derecha */
+@keyframes pm-scan {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* Parpadeo de cursor monospace */
+@keyframes pm-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+/* Shimmer · gradient horizontal recorriendo el card para loading skeleton.
+   Usado por ProductTile y demás tiles cuando data se está cargando. */
+@keyframes pm-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

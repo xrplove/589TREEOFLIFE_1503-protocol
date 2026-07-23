@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - 'feat/**'
+      - 'chore/**'
+      - 'fix/**'
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  quality:
+    name: Typecheck + Unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck (tsc --noEmit)
+        run: npx tsc --noEmit
+
+      - name: Unit tests (motor comercio · jurisdicción · gate cumplimiento)
+        run: npm run test:unit
+
+      - name: Lint (advisory · no bloquea)
+        run: npm run lint
+        continue-on-error: true
+
+  rls-audit:
+    name: RLS audit (solo con BD de test configurada)
+    needs: quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Guard · ¿hay secretos de BD de test?
+        id: guard
+        env:
+          SVC: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY_TEST }}
+        run: |
+          if [ -n "$SVC" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Sin SUPABASE_*_TEST configurados · se omite la auditoría RLS (no es fallo)."
+          fi
+
+      - name: Checkout code
+        if: steps.guard.outputs.run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        if: steps.guard.outputs.run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        if: steps.guard.outputs.run == 'true'
+        run: npm ci
+
+      - name: Materializar .env.local desde secretos de test
+        if: steps.guard.outputs.run == 'true'
+        env:
+          URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL_TEST }}
+          ANON: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY_TEST }}
+          SVC: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY_TEST }}
+        run: |
+          {
+            echo "NEXT_PUBLIC_SUPABASE_URL=$URL"
+            echo "NEXT_PUBLIC_SUPABASE_ANON_KEY=$ANON"
+            echo "SUPABASE_SERVICE_ROLE_KEY=$SVC"
+          } > .env.local
+
+      - name: Auditoría RLS (15 intentos que deben fallar)
+        if: steps.guard.outputs.run == 'true'
+        run: node scripts/rls-audit.mjs
