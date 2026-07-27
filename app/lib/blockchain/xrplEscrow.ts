@@ -24,10 +24,13 @@ import { Client, Wallet, xrpToDrops, type EscrowCreate, type EscrowFinish, type 
 
 export const XRPL_TESTNET_WSS = 'wss://s.altnet.rippletest.net:51233'
 export const XRPL_TESTNET_EXPLORER = 'https://testnet.xrpl.org/transactions'
+export const XRPL_TESTNET_EXPLORER_ACCOUNT = 'https://testnet.xrpl.org/accounts'
+export const XRPL_TESTNET_FAUCET = 'https://faucet.altnet.rippletest.net/accounts'
 
 /** Epoch de Ripple = 2000-01-01T00:00:00Z (segundos desde la época Unix). */
 const RIPPLE_EPOCH = 946_684_800
-const toRippleTime = (unixMs: number): number => Math.floor(unixMs / 1000) - RIPPLE_EPOCH
+/** Unix ms → segundos ripple-epoch (compartido: escrow · validación de blobs · credenciales). */
+export const toRippleTime = (unixMs: number): number => Math.floor(unixMs / 1000) - RIPPLE_EPOCH
 
 export type EscrowCondition = {
   /** Condición pública (va en EscrowCreate · se puede compartir). */
@@ -114,13 +117,6 @@ export async function createEscrow(args: {
   }
 }
 
-/** Coste extra del EscrowFinish con fulfillment: base × (33 + ceil(bytes/16)). */
-function finishFeeDrops(baseFeeDrops: string, fulfillmentHex: string): string {
-  const bytes = fulfillmentHex.length / 2
-  const base = Number(baseFeeDrops || '10')
-  return String(base * (33 + Math.ceil(bytes / 16)))
-}
-
 /**
  * EscrowFinish: el ORÁCULO revela el `fulfillment` → libera los fondos al vendedor.
  * Lo puede enviar cualquiera (no toca el dinero, solo paga la comisión). Requiere coste extra
@@ -145,9 +141,12 @@ export async function finishEscrow(args: {
     Fulfillment: fulfillment,
   }
 
+  // autofill (xrpl ≥5) YA sube la comisión por el fulfillment del EscrowFinish
+  // (baseFee escalado por 33 + bytes/16, ver sugar/autofill.js) y RESPETA maxFeeDrops.
+  // Antes se re-escalaba a mano encima → ~36× de más (y saltándose el cap): con el
+  // netFee alto por carga, el Finish podía revertir por saldo/terINSUF_FEE y el
+  // oráculo NO liberaba. Se deja el fee de autofill tal cual (auditoría 22-jul).
   const prepared = await client.autofill(tx)
-  // autofill no sube la comisión por el fulfillment → la calculamos.
-  prepared.Fee = finishFeeDrops(prepared.Fee ?? '10', fulfillment)
   const signed = senderWallet.sign(prepared)
   const res = await client.submitAndWait(signed.tx_blob)
   const code = resultCode(res.result.meta)
