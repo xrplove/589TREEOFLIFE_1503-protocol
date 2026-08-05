@@ -798,6 +798,7 @@ export type WorkspaceStrings = {
   perfilEmployerSaving: string
   perfilEmployerClear: string
   fichaTrajectoryTitle: string
+  fichaTrajectoryScore: string
   fichaTrajectorySubtitle: string
   fichaTrajectoryHidden: string
   fichaTrajectoryOps: string
@@ -1031,6 +1032,7 @@ const WS_ES: WorkspaceStrings = {
   perfilEmployerSaving: 'Guardando…',
   perfilEmployerClear: 'Borrar',
   fichaTrajectoryTitle: 'TRAYECTORIA · CAPA 1',
+  fichaTrajectoryScore: 'PUNTUACIÓN',
   fichaTrajectorySubtitle: 'Las métricas se llenan con operaciones reales del marketplace',
   fichaTrajectoryHidden: 'Tu trayectoria está oculta a otros Actores. Solo tú la ves aquí. Puedes cambiarlo en Mi Perfil.',
   fichaTrajectoryOps: 'OPERACIONES CERRADAS',
@@ -1251,6 +1253,7 @@ const WS_EN: WorkspaceStrings = {
   perfilEmployerSaving: 'Saving…',
   perfilEmployerClear: 'Clear',
   fichaTrajectoryTitle: 'TRACK RECORD · LAYER 1',
+  fichaTrajectoryScore: 'SCORE',
   fichaTrajectorySubtitle: 'Metrics fill in with real marketplace operations',
   fichaTrajectoryHidden: 'Your track record is hidden from other Actors. Only you see it here. You can change this in My Profile.',
   fichaTrajectoryOps: 'CLOSED OPERATIONS',
@@ -1471,6 +1474,7 @@ const WS_FR: WorkspaceStrings = {
   perfilEmployerSaving: 'Enregistrement…',
   perfilEmployerClear: 'Effacer',
   fichaTrajectoryTitle: 'PARCOURS · COUCHE 1',
+  fichaTrajectoryScore: 'SCORE',
   fichaTrajectorySubtitle: 'Les indicateurs se remplissent avec les opérations réelles du marketplace',
   fichaTrajectoryHidden: 'Votre parcours est masqué aux autres acteurs. Vous seul le voyez ici. Modifiable dans Mon Profil.',
   fichaTrajectoryOps: 'OPÉRATIONS CLÔTURÉES',
@@ -1691,6 +1695,7 @@ const WS_DE: WorkspaceStrings = {
   perfilEmployerSaving: 'Speichern…',
   perfilEmployerClear: 'Löschen',
   fichaTrajectoryTitle: 'WERDEGANG · EBENE 1',
+  fichaTrajectoryScore: 'PUNKTZAHL',
   fichaTrajectorySubtitle: 'Kennzahlen werden mit echten Marktplatz-Operationen gefüllt',
   fichaTrajectoryHidden: 'Ihr Werdegang ist vor anderen Akteuren verborgen. Nur Sie sehen ihn hier. Änderbar in Mein Profil.',
   fichaTrajectoryOps: 'ABGESCHLOSSENE OPERATIONEN',
@@ -1911,6 +1916,7 @@ const WS_IT: WorkspaceStrings = {
   perfilEmployerSaving: 'Salvataggio…',
   perfilEmployerClear: 'Cancella',
   fichaTrajectoryTitle: 'PERCORSO · LIVELLO 1',
+  fichaTrajectoryScore: 'PUNTEGGIO',
   fichaTrajectorySubtitle: 'Le metriche si riempiono con operazioni reali del marketplace',
   fichaTrajectoryHidden: 'Il tuo percorso è nascosto agli altri attori. Solo tu lo vedi qui. Modificabile in Il Mio Profilo.',
   fichaTrajectoryOps: 'OPERAZIONI CHIUSE',
@@ -2131,6 +2137,7 @@ const WS_PT: WorkspaceStrings = {
   perfilEmployerSaving: 'A guardar…',
   perfilEmployerClear: 'Limpar',
   fichaTrajectoryTitle: 'TRAJETÓRIA · CAMADA 1',
+  fichaTrajectoryScore: 'PONTUAÇÃO',
   fichaTrajectorySubtitle: 'As métricas preenchem-se com operações reais do marketplace',
   fichaTrajectoryHidden: 'A sua trajetória está oculta para outros atores. Só você a vê aqui. Pode alterar em Meu Perfil.',
   fichaTrajectoryOps: 'OPERAÇÕES FECHADAS',
@@ -2351,6 +2358,7 @@ const WS_ZH: WorkspaceStrings = {
   perfilEmployerSaving: '正在保存…',
   perfilEmployerClear: '清除',
   fichaTrajectoryTitle: '履历 · 第一层',
+  fichaTrajectoryScore: '评分',
   fichaTrajectorySubtitle: '指标将通过市场上的真实操作填充',
   fichaTrajectoryHidden: '您的履历对其他参与者隐藏。只有您在此处看到。可在「我的资料」中修改。',
   fichaTrajectoryOps: '已完成的操作',
@@ -2571,6 +2579,7 @@ const WS_JA: WorkspaceStrings = {
   perfilEmployerSaving: '保存中…',
   perfilEmployerClear: 'クリア',
   fichaTrajectoryTitle: '履歴 · レイヤー 1',
+  fichaTrajectoryScore: 'スコア',
   fichaTrajectorySubtitle: 'マーケットプレイスの実取引で指標が埋まります',
   fichaTrajectoryHidden: 'あなたの履歴は他のアクターに非表示です。ここではあなただけが見ることができます。マイプロフィールで変更できます。',
   fichaTrajectoryOps: '完了した取引',

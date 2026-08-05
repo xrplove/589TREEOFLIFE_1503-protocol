@@ -1,8 +1,51 @@
 'use client'
 
 import { getHomeStrings, type HomeStrings, type PaymentModel } from '../data/home-i18n'
+import { explorerTxUrl } from '../lib/blockchain/explorerUrls'
 
 const SECTION_PADDING = '6rem 8vw'
+
+// ─── PRUEBA VERIFICABLE POR UN TERCERO, SIN CREDENCIALES (5-ago-2026) ───────
+// La home decía «transacciones verificables en el explorador» y NO daba dónde
+// clicar. Un evaluador de un programa que aterriza en 1503.global se quedaba
+// sin puerta a la evidencia: o tenía el correo con los hashes, o no había forma.
+// Estos son los enlaces del escrow de TOKEN (XLS-85) que liquida en una divisa
+// emitida, que es la pieza que un revisor de XRPL quiere ver.
+//
+// Los enlaces salen de `explorerTxUrl` (fuente única, con guardián que prohíbe
+// escribir la URL del explorador a mano) y esa función devuelve `null` si el
+// hash no tiene forma de hash: así es IMPOSIBLE pintar un enlace roto debajo de
+// un texto que promete prueba. Si algún hash se corrompe, desaparece el enlace
+// en vez de aparecer uno que lleva a ninguna parte.
+const PUBLIC_REPO = 'https://github.com/instalacionesdelamadera-cmd/1503-protocol'
+const XLS85_ESCROW_CREATE = 'EB569183CB53350EFC0BDCB271F04C5A59B75ECB6FC84F4D6F5ABC22659A24D0'
+const XLS85_ESCROW_FINISH = '9A44384FB992C0F1E9730282891DC8A7DF58F25DE818D2BE16AD2F8AF6812467'
+
+// Etiquetas deliberadamente SIN traducir: son nombres propios del protocolo y
+// del repositorio (`EscrowCreate`, `VERIFY.md`). Traducirlos los haría menos
+// reconocibles para quien viene a verificar, y evita 8 traducciones que
+// envejecerían por separado.
+const PROTO_LINKS: { label: string; href: string }[] = [
+  { label: 'EscrowCreate', href: explorerTxUrl(XLS85_ESCROW_CREATE) },
+  { label: 'EscrowFinish', href: explorerTxUrl(XLS85_ESCROW_FINISH) },
+  { label: 'VERIFY.md', href: `${PUBLIC_REPO}/blob/main/VERIFY.md` },
+  { label: 'GitHub', href: PUBLIC_REPO },
+].filter((l): l is { label: string; href: string } => typeof l.href === 'string' && l.href.length > 0)
+
+const PROTO_LINKS_CSS = `
+.proto-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 999px;
+  border: 1px solid rgba(122,136,153,0.35);
+  color: #9FB0C4; text-decoration: none;
+  font-family: var(--font-dm-mono), monospace;
+  font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase;
+  transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+.proto-link:hover, .proto-link:focus-visible {
+  color: #E8EDF5; border-color: rgba(0,163,255,0.6); background: rgba(0,163,255,0.07);
+}
+`
 
 // Default para consumidores que aún no pasan idioma (p. ej. las páginas de
 // sector, que hoy renderizan estas secciones en español). La home SÍ pasa su
@@ -1544,6 +1587,32 @@ export function ProtocolLayer({ t = DEFAULT_T }: { t?: HomeStrings }) {
           <HexBullet size={9} color="#F0B429" />
           {t.protoBadge}
         </div>
+
+        {/* Los enlaces que convierten «verificable» en verificable de verdad. */}
+        {PROTO_LINKS.length > 0 && (
+          <div
+            style={{
+              marginTop: '1.4rem',
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 10,
+              justifyContent: 'center',
+            }}
+          >
+            {PROTO_LINKS.map((l) => (
+              <a
+                key={l.label}
+                className="proto-link"
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {l.label} ↗
+              </a>
+            ))}
+            <style>{PROTO_LINKS_CSS}</style>
+          </div>
+        )}
       </div>
     </section>
   )

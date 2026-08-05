@@ -37,8 +37,9 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function Home() {
   // Idioma decidido server-side: cookie 1503:lang > país de alta > Accept-Language
-  // > 'es'. Un visitante anglófono lee la home
-  // en inglés sin tocar nada.
+  // > 'es'. Un visitante anglófono lee la home en inglés sin tocar nada.
+  // (Este fichero se publica tal cual en el repo público: nada de nombres de
+  // programas ni de contrapartes en los comentarios.)
   const lang = await getServerLang()
   const t = getHomeStrings(lang)
 

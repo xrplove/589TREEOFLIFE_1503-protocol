@@ -24,15 +24,15 @@ const LANGS: { code: Lang; label: string }[] = [
   { code: 'ja', label: '日本語' },
 ]
 
+function pick(code: Lang) {
+  // 1 año, todo el sitio. getServerLang() la lee con máxima precedencia.
+  document.cookie = `1503:lang=${code}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax`
+  window.location.reload()
+}
+
 export default function LangSwitcher({ current, label }: { current: Lang; label: string }) {
   const [open, setOpen] = useState(false)
   const active = LANGS.find((l) => l.code === current) ?? LANGS[1]
-
-  function pick(code: Lang) {
-    // 1 año, todo el sitio. getServerLang() la lee con máxima precedencia.
-    document.cookie = `1503:lang=${code}; path=/; max-age=${60 * 60 * 24 * 365}; SameSite=Lax`
-    window.location.reload()
-  }
 
   return (
     <div
