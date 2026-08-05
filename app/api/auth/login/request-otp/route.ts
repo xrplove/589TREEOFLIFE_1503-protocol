@@ -6,6 +6,13 @@ import {
   recordAttempt,
   type AuthOutcome,
 } from '../../../../lib/auth-rate-limit'
+import { buildOtpEmail } from '../../../../lib/email/otpEmail'
+
+// Mismo remitente por defecto que welcome-email y kyc-decision-email: el sandbox
+// de Resend. `RESEND_FROM` lo sustituye por el dominio propio cuando 1503.global
+// esté verificado en Resend — hasta entonces el sandbox SOLO entrega al email
+// verificado de la cuenta, así que un evaluador externo NO recibiría nada.
+const FROM_DEFAULT = '1503 <onboarding@resend.dev>'
 
 /**
  * Solicitar OTP de login del Actor.
@@ -21,8 +28,9 @@ import {
  *  - En DESARROLLO devuelve el OTP en la respuesta para que el Actor lo
  *    pueda meter directamente (útil mientras Resend está en sandbox y solo
  *    entrega al email base verificado).
- *  - En PRODUCCIÓN no devuelve el OTP — el envío real por Resend con
- *    template propio se añadirá cuando se configure el dominio.
+ *  - En PRODUCCIÓN lo ENVÍA por Resend (2-ago-2026) y nunca lo devuelve en la
+ *    respuesta. Si el envío falla, responde 502 — el Actor tiene que saber que
+ *    el código no ha salido, no quedarse esperando el buzón.
  *
  * El OTP generado se consume con supabase.auth.verifyOtp({email, token,
  * type: 'magiclink'}) en el cliente.
@@ -172,10 +180,48 @@ export async function POST(req: NextRequest) {
     return respond('sent', { ok: true, dev_otp: otp }, 200)
   }
 
-  // En producción, aquí iría el envío del email vía Resend con template propio
-  // (asunto: "Tu código de acceso a 1503", body: el OTP).
-  // Hasta que se registre el dominio en Resend, este path no se llega:
-  // /login solo está accesible en local development por ahora.
-  // TODO: implementar envío Resend cuando esté el dominio.
+  // ── Envío real del código (2-ago-2026) ────────────────────────────────────
+  // Hasta hoy aquí había un `return 503` con un TODO. Era honesto (mejor un 503
+  // que un 'sent' fingido), pero significaba que EN PRODUCCIÓN NADIE PODÍA
+  // ENTRAR AL CORE: se pasaba el candado de la demo y detrás había un formulario
+  // que pedía un código que no salía de ninguna parte.
+  //
+  // Va por Resend (HTTPS) y NO por SMTP: netcup corta toda salida SMTP del VPS
+  // (25/465/587 dan timeout incluso contra Gmail). El 443 sí sale.
+  if (!process.env.RESEND_API_KEY) {
+    // Sin clave no hay envío. Se dice, no se finge: un 'sent' aquí dejaría al
+    // Actor mirando el buzón para siempre.
+    return respond(
+      'error',
+      { ok: false, error: 'Envío de código no disponible en este entorno.' },
+      503,
+    )
+  }
+
+  const { subject, html, text } = buildOtpEmail({ otp })
+  const { Resend } = await import('resend')
+  const { error: sendError } = await new Resend(process.env.RESEND_API_KEY).emails.send({
+    from: process.env.RESEND_FROM || FROM_DEFAULT,
+    to: [email],
+    subject,
+    html,
+    text,
+  })
+
+  if (sendError) {
+    // El fallo del proveedor NO se traga: si Resend rechaza el destinatario
+    // (sandbox: solo entrega al email verificado de la cuenta) o la cuota está
+    // agotada, el Actor tiene que enterarse de que el código no ha salido, no
+    // quedarse esperando. El motivo va al log de auditoría, no a la respuesta:
+    // el mensaje del proveedor puede revelar si la dirección existe.
+    console.error('[login] fallo al enviar el OTP por Resend:', sendError.name, sendError.message)
+    return respond(
+      'error',
+      { ok: false, error: 'No hemos podido enviarte el código. Inténtalo de nuevo en unos minutos.' },
+      502,
+    )
+  }
+
+  // Enviado de verdad. El OTP NO viaja en la respuesta (solo en el correo).
   return respond('sent', { ok: true }, 200)
 }

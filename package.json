@@ -32,7 +32,6 @@
     "@types/d3-geo": "^3.1.0",
     "binpackingjs": "^4.1.0",
     "d3-geo": "^3.1.1",
-    "ethers": "^6.16.0",
     "file-type": "^22.0.1",
     "framer-motion": "^12.40.0",
     "next": "16.2.4",

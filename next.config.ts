@@ -34,7 +34,14 @@ const csp = [
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob: https:",
   "font-src 'self' data:",
-  `connect-src 'self' https://*.supabase.co wss://*.supabase.co https://*.vercel.app${chatOrigin ? ' ' + chatOrigin : ''}`,
+  // 5-ago-2026 · fuera `https://*.vercel.app` de connect-src. Era legado de cuando
+  // esto vivía en Vercel: hoy prod es self-host y NADA en el código se conecta a un
+  // `.vercel.app` (verificado por barrido). Un comodín sobre un dominio de hosting
+  // COMPARTIDO en `connect-src` es una vía de exfiltración: cualquiera puede
+  // desplegar `lo-que-sea.vercel.app`, así que autorizarlo entero es autorizar a
+  // cualquier atacante que consiga inyectar script. Se quita porque no cuesta nada
+  // y porque un auditor lo mira.
+  `connect-src 'self' https://*.supabase.co wss://*.supabase.co${chatOrigin ? ' ' + chatOrigin : ''}`,
   "worker-src 'self' blob:",
   "frame-ancestors 'none'",
   "base-uri 'self'",
@@ -59,8 +66,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  // Salida `.next/standalone` con su `server.js` mínimo, desplegable en un runner
-  // sin instalar node_modules (mismo patrón que el CORE en el VPS).
+  // Salida autónoma para contenedores (self-host en VPS Netcup): `next build` crea
+  // `.next/standalone` con su `server.js` mínimo, desplegable sin instalar node_modules.
+  // Vercel lo ignora (usa su propio build) → no afecta al despliegue actual.
   output: 'standalone',
   async headers() {
     return [
