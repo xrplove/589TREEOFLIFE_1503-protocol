@@ -1,14 +1,32 @@
 # Protocol 1503 — Verifiable trade infrastructure on XRP Ledger
 
+[![CI](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/ci.yml/badge.svg)](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/ci.yml)
+[![E2E](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/e2e.yml/badge.svg)](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/e2e.yml)
+[![Uptime](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/uptime.yml/badge.svg)](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/uptime.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
+
 > An open, **non-custodial** B2B trade rail that ties the **product**, the **export paperwork**, and the **payment** into a single verifiable operation, anchored on XRP Ledger. The core is **live on XRPL testnet** — including an **XLS‑85 issued-token escrow** (RLUSD‑coded) and the full **XLS‑70 credential lifecycle** — passing **151/151 unit tests**.
 
 This repository contains the source code and the reproducible verification scripts for the XRPL Grants submission of Protocol 1503.
 
-**Live site:** https://1503.global  ·  **Verify the on-ledger proof in ~5 min:** [VERIFY.md](VERIFY.md)
+**Live site:** https://1503.global  ·  **Verify the on-ledger proof in ~5 min:** [VERIFY.md](VERIFY.md)  ·  **3-min demo:** https://youtu.be/cMcH3A2StkY
+
+---
+
+## What this brings to the XRP Ledger
+
+- **A real-world settlement use case, not a demo primitive.** Cross-border B2B trade — the product passport, the export paperwork and the payment as one verifiable operation. It runs on testnet today; the primitives carry to mainnet unchanged.
+- **Two recent amendments used together, in an application.** XLS‑70 Credentials carry the KYB seal with no PII on-chain, and XLS‑85 TokenEscrow settles in an **issued token** rather than native XRP — both proven end to end below.
+- **RLUSD as the settlement currency of a trade rail**, the moment the canonical issuer enables `AllowTrustLineLocking` (see the note below — the only blocking difference is that flag).
+- **A consumer already running on this core:** [artikalia.1503.global](https://artikalia.1503.global) is a live tool for a real furniture and interior-design business, served by this codebase.
 
 ### About this repository
 
-This is a **curated public snapshot** of Protocol 1503's deliverables — MIT-licensed, kept as a **separate repository** from the private working monorepo so that no secrets, credentials or personal data ever reach a public repo. The commit history here reflects that publishing decision, **not** the depth of the work: the private codebase carries **900+ commits** of active development. Read access for technical due diligence is available on request — email **j.soler@1503.global**.
+This is a **curated public snapshot** of Protocol 1503's deliverables — MIT-licensed, kept as a **separate repository** from the private working monorepo so that no secrets, credentials or personal data ever reach a public repo.
+
+**The commit count here reflects that publishing decision, not the depth of the work.** The private codebase carries **1,110 commits, the first dated 1 May 2026** — roughly 1,100 commits in 96 days. Two things in this repository are easier to check than to take on trust: the **Actions tab**, where CI, end-to-end and uptime workflows have run continuously (the uptime job probes the live site every 10 minutes), and **[VERIFY.md](VERIFY.md)**, which reproduces the on-ledger flow from a clean clone in about five minutes.
+
+Read access to the private repository for technical due diligence is available on request — email **j.soler@1503.global** with your GitHub handle.
 
 ---
 

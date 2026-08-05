@@ -1,6 +1,14 @@
 {
-  "name": "marketplace-inmobiliario",
+  "name": "1503-protocol",
   "version": "0.1.0",
+  "description": "Protocol 1503 - verifiable, non-custodial B2B trade infrastructure on the XRP Ledger",
+  "license": "MIT",
+  "author": "Jose Antonio Soler Madrid <j.soler@1503.global>",
+  "homepage": "https://1503.global",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/instalacionesdelamadera-cmd/1503-protocol.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
