@@ -20,6 +20,27 @@ This repository contains the source code and the reproducible verification scrip
 - **RLUSD as the settlement currency of a trade rail**, the moment the canonical issuer enables `AllowTrustLineLocking` (see the note below — the only blocking difference is that flag).
 - **A consumer already running on this core:** [artikalia.1503.global](https://artikalia.1503.global) is a live tool for a real furniture and interior-design business, served by this codebase.
 
+---
+
+## Machine-to-machine settlement: evidence, not wallets
+
+The industry's default answer to agentic payments is to give the agent a wallet. For an industrial device that is a liability — insurance, custody and civil responsibility all land on whoever put keys in a machine. **1503 does the opposite: the machine produces signed evidence, and only an auditable oracle can release money.**
+
+The device is *cryptographically incapable* of moving a single unit of value. That is not a policy — it is enforced by a structural test in this repository that fails the build if the robotics and IoT layers ever import the blockchain layer, construct a wallet, read a seed or submit a transaction.
+
+| Piece | What it does |
+|---|---|
+| **Signed telemetry** | Every reading (`temperature_c`, `humidity_pct`, `gps`, `shock_g`, `seal_state`, `delivery_ack`) is ed25519-signed on the device; the private key never leaves it. The server verifies against the **reconstructed** canonical payload, never the one it was sent. |
+| **Anti-replay** | Unique nonce with database-level uniqueness, freshness window, fail-closed ranges. |
+| **Double control** | A delivery attestation requires **two independent signers**, inside a time window, with co-location checked by Haversine distance — one machine cannot attest its own delivery. |
+| **Hardware identity** | IDevID verified against the manufacturer's CA per **IEEE 802.1AR**: certificate chain to a trusted root, validity window, and proof of possession. The signed payload contains the LDevID, so a captured signature cannot be bound to a different key. Fail-closed when no trusted CA is configured. |
+| **The seal gates the money** | A `tamper` on the electronic seal **always** blocks settlement, whether or not the operation declared a seal requirement — and an unsigned `tamper` is not evidence either, so a forged alarm cannot hijack a seller's payment. |
+| **Pay-per-call (x402)** | An HTTP endpoint that answers **`402 Payment Required`** with an `accepts` envelope (network, asset, amount, `payTo`), then requires an **on-ledger confirmed** payment plus a signed attestation before serving. Without a configured payee it returns 503 — never free. |
+
+**The frontier, stated exactly:** *the robot signs evidence with its identity; the money is released by an auditable oracle with a temporal backstop.* Not "robots as financial agents" — the robot never holds ledger keys.
+
+**What is and is not proven, plainly:** the rail runs end to end in production and the seal gate has been exercised against it. **There is no deployed hardware yet** — the devices feeding it today are two simulators that perform real HTTP POSTs and sign for real, marked `provenance='simulator'` in the database so nothing simulated is ever displayed as attested hardware. The `402` endpoint answers on the application host, not yet on the public domain. Settlement remains on XRPL testnet.
+
 ### About this repository
 
 This is a **curated public snapshot** of Protocol 1503's deliverables — MIT-licensed, kept as a **separate repository** from the private working monorepo so that no secrets, credentials or personal data ever reach a public repo.
