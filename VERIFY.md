@@ -67,7 +67,8 @@ npm install
 
 # 2. Run the unit test suite
 npm run test:unit
-#    Expected: 151/151 passing (compliance engine, DPP, cubing, payment terms, escrow key derivation, connector…)
+#    Expected: 212/212 passing (compliance engine, DPP, cubing, payment terms, escrow
+#    key derivation, connector, and the machine-to-machine suites described in section C)
 
 # 3. Run the escrow smoke test on XRPL testnet (uses the faucet — no credentials, no real funds)
 node --import tsx scripts/seed/xrplEscrowSmoke.mjs
@@ -95,6 +96,28 @@ node --import tsx scripts/credentials/kybSmoke.mts
 ```
 
 Every transaction these scripts create is, again, publicly inspectable on `https://testnet.xrpl.org`.
+
+---
+
+## C. Machine-to-machine: verify the properties offline
+
+These need **no network, no credentials and no database**. They are pure verification, and the negative cases are the point — anyone can write a test that passes when everything is correct.
+
+```bash
+npx tsx --test app/lib/robotics/hardwareIdentity.test.ts   # IDevID (IEEE 802.1AR)
+npx tsx --test app/lib/robotics/m2mAttestation.test.ts     # delivery attestation
+npx tsx --test app/lib/iot/telemetry.test.ts               # signed device readings
+```
+
+**Hardware identity — the attacks it must survive.** The suite is built around a forger: a certificate whose `subject` says it belongs to the manufacturer but which is signed by a different CA. It is rejected — *trusting the subject field would be useless*, and the same forged certificate does pass when its CA is the trusted one, because the signature is the only thing that decides. Beyond that: presenting a certificate without signing proves nothing (a certificate is public); signing with a different private key fails even when the certificate is genuine; **a signature cannot be replayed to bind a different telemetry key**, because the signed payload contains the LDevID; the fingerprint signed must be the one of the certificate presented; and an expired certificate attests nothing, judged at the instant supplied. With no trusted CA configured the path is fail-closed.
+
+**Delivery attestation.** The M2M payload is byte-identical to the telemetry payload — it does not reimplement JCS canonicalisation, it reuses it, so the two can never drift apart. The signature is re-verified from the **reconstructed** record, and altering the state, the counterparty, the nonce or the instant invalidates it. Verification never throws on malformed input; it returns false.
+
+**Signed readings.** The payload is deterministic and normalises the timestamp byte-for-byte; the nonce changes the payload (this is the anti-replay basis, enforced at the database level by a `UNIQUE (device_public_key, nonce)` index); a null `order_id` signs differently from a concrete one, so there is no ambiguity; and construction is fail-closed — physically implausible readings and incoherent kind/value pairs are rejected with a reason rather than stored.
+
+> Test titles are in Spanish, the working language of the codebase; the assertions are language-independent and the file names describe what each suite covers.
+
+**Not in this repository:** the settlement oracle, the seal-integrity engine and the ingestion endpoint depend on the database and carry the commercial core, so they stay in the private repository — including the structural test that forbids the robotics and IoT layers from importing the ledger layer at all. Read access on request.
 
 ---
 

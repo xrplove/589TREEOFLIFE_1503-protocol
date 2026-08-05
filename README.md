@@ -5,7 +5,7 @@
 [![Uptime](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/uptime.yml/badge.svg)](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/uptime.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
 
-> An open, **non-custodial** B2B trade rail that ties the **product**, the **export paperwork**, and the **payment** into a single verifiable operation, anchored on XRP Ledger. The core is **live on XRPL testnet** — including an **XLS‑85 issued-token escrow** (RLUSD‑coded) and the full **XLS‑70 credential lifecycle** — passing **151/151 unit tests**.
+> An open, **non-custodial** B2B trade rail that ties the **product**, the **export paperwork**, and the **payment** into a single verifiable operation, anchored on XRP Ledger. The core is **live on XRPL testnet** — including an **XLS‑85 issued-token escrow** (RLUSD‑coded) and the full **XLS‑70 credential lifecycle** — passing **212/212 unit tests**.
 
 This repository contains the source code and the reproducible verification scripts for the XRPL Grants submission of Protocol 1503.
 
@@ -112,6 +112,15 @@ app/                    Application code (Next.js)
     xrplCredential.ts   XLS-70 credential lifecycle (issue / accept / third-party verify)
     escrowSecret.ts     HMAC-derived crypto-condition — the oracle's key is re-derived, never stored at rest
   lib/custodyVerify.ts  3/3 ed25519 custody-chain verification (the oracle gate)
+  lib/robotics/
+    m2mAttestation.ts   Machine-to-machine delivery attestation - signature re-verified
+                        against the RECONSTRUCTED canonical payload, never the one sent
+    hardwareIdentity.ts IDevID verification per IEEE 802.1AR: chain to a trusted
+                        manufacturer CA, validity window, proof of possession; fail-closed
+  lib/iot/
+    telemetry.ts        Signed device readings (temperature, humidity, GPS, shock, seal
+                        state, delivery ack) with canonical payload + ed25519 verification
+    ingest.ts           Ingestion rules: freshness window, nonce anti-replay, fail-closed ranges
   lib/jcsCanonical.ts   RFC 8785 (JCS) canonicalization
   lib/dppHash.ts        Canonical hash + ed25519 signing
   data/tradeCompliance.ts   Compositional cross-border compliance engine
@@ -126,7 +135,7 @@ scripts/credentials/    XLS-70 credential smoke (kybSmoke.mts)
 
 ```bash
 npm install
-npm run test:unit        # expect 151/151 passing
+npm run test:unit        # expect 212/212 passing
 ```
 
 The testnet smoke scripts need no credentials (they use the XRPL faucet):
