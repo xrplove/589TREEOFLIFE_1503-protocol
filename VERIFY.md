@@ -67,7 +67,7 @@ npm install
 
 # 2. Run the unit test suite
 npm run test:unit
-#    Expected: 212/212 passing (compliance engine, DPP, cubing, payment terms, escrow
+#    Expected: 217/217 passing (compliance engine, DPP, cubing, payment terms, escrow
 #    key derivation, connector, and the machine-to-machine suites described in section C)
 
 # 3. Run the escrow smoke test on XRPL testnet (uses the faucet — no credentials, no real funds)

@@ -5,7 +5,7 @@
 [![Uptime](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/uptime.yml/badge.svg)](https://github.com/instalacionesdelamadera-cmd/1503-protocol/actions/workflows/uptime.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
 
-> An open, **non-custodial** B2B trade rail that ties the **product**, the **export paperwork**, and the **payment** into a single verifiable operation, anchored on XRP Ledger. The core is **live on XRPL testnet** — including an **XLS‑85 issued-token escrow** (RLUSD‑coded) and the full **XLS‑70 credential lifecycle** — passing **212/212 unit tests**.
+> An open, **non-custodial** B2B trade rail that ties the **product**, the **export paperwork**, and the **payment** into a single verifiable operation, anchored on XRP Ledger. The core is **live on XRPL testnet** — including an **XLS‑85 issued-token escrow** (RLUSD‑coded) and the full **XLS‑70 credential lifecycle** — passing **217/217 unit tests**.
 
 This repository contains the source code and the reproducible verification scripts for the XRPL Grants submission of Protocol 1503.
 
@@ -85,7 +85,16 @@ The escrow + oracle + accreditation flow runs end to end on a real demo operatio
 
 This pair proves the **XLS‑85 TokenEscrow** path: the escrowed `Amount` is an **issued token** (currency code `RLUSD`, from our own test issuer) rather than native XRP, released by the oracle re-deriving the crypto-condition (never stored at rest — see `escrowSecret.ts`). The seller's balance goes `0 → 15` on the `EscrowFinish`.
 
-> **Why a test issuer, not Ripple's canonical RLUSD?** XLS‑85 requires the **issuer** to enable `AllowTrustLineLocking`, and Ripple's official RLUSD testnet issuer (`rQhWct2fv4Vc4KRjRgMrxa8xPN9Zx9iLKV`, `Domain: ripple.com`) does **not** have that flag set — re-checked 27 Jul 2026 — so canonical RLUSD cannot be escrowed on testnet yet. One pitfall when you verify this yourself: that account **does** have `AllowTrustLineClawback` (`0x80000000`) set; the flag XLS‑85 needs is `AllowTrustLineLocking` (`0x40000000`), which is absent. The only change for real RLUSD is that issuer flag (or mainnet parity); our mechanism is identical. Independently verifiable via `account_info` on that address.
+> **Why a test issuer, not Ripple's canonical RLUSD?** XLS‑85 requires the **issuer** to enable `AllowTrustLineLocking`, and Ripple's official RLUSD issuer does **not** have that flag set — **on either network**. Re-measured **7 Aug 2026**:
+>
+> | Network | RLUSD issuer | `Flags` | `AllowTrustLineLocking` | `AllowTrustLineClawback` |
+> |---|---|---|---|---|
+> | Testnet | `rQhWct2fv4Vc4KRjRgMrxa8xPN9Zx9iLKV` | `0x819a0000` | ❌ absent | ✅ set |
+> | **Mainnet** | `rMxCKbEDwqr76QuheSUMdEGf4B9xJ8m5De` | `0x819a0000` | ❌ absent | ✅ set |
+>
+> So canonical RLUSD cannot be escrowed **anywhere today** — this is not a testnet-only gap, and mainnet parity does not resolve it. One pitfall when you verify this yourself: the flag XLS‑85 needs is `AllowTrustLineLocking` (`0x40000000`); the one that **is** set is `AllowTrustLineClawback` (`0x80000000`). They are adjacent bits and easy to confuse — reading them from hand-typed constants instead of the protocol definition once produced a wrong result for us, which is why [`banderasCuenta.ts`](app/lib/blockchain/banderasCuenta.ts) derives both from `ripple-binary-codec`'s `definitions.json` instead of hardcoding them.
+>
+> The change needed is a single `AccountSet` with `SetFlag: 17` on the issuing account. Our mechanism is identical either way — the escrow above already settles an issued token end to end. **Independently verifiable right now** via `account_info` on either address.
 
 The **XLS‑70 credential lifecycle** also runs end to end on testnet: a `1503-KYB` credential is issued (`CredentialCreate`), accepted by the subject (`CredentialAccept`), and verified by a third party reading the ledger alone. **No PII goes on-chain** — the credential URI carries only a SHA‑256 of the off-chain KYB envelope.
 
@@ -135,7 +144,7 @@ scripts/credentials/    XLS-70 credential smoke (kybSmoke.mts)
 
 ```bash
 npm install
-npm run test:unit        # expect 212/212 passing
+npm run test:unit        # expect 217/217 passing
 ```
 
 The testnet smoke scripts need no credentials (they use the XRPL faucet):
